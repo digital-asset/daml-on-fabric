@@ -22,7 +22,7 @@ Now that we have our DAML app built it needs a place to run, let's grab `daml-on
 
 	Make sure for Java, Scala, and SBT that you are using the exact versions specified or otherwise you may encounter build or runtime issues. You can use sdkman.io to easily install these specific versions and manage multiple versions.
 
-4. From the root `daml-on-fabric` directory run `sbt "run --port 6865 --role provision,time,ledger" -J-DfabricConfigFile=config.json` which will let the DAML runtime start talking to our Fabric instance.
+4. From the root `daml-on-fabric` directory run `sbt "run --port 6865 --role provision,time,ledger" -J-DfabricConfigFile=config-local.yaml` which will let the DAML runtime start talking to our Fabric instance.
 
 	Give this process a moment to start up, it is ready once you see output like:
 

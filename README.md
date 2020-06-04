@@ -233,13 +233,13 @@ This will clean, compile, build and package the code, deploy the network and run
 - `cd src/test/fixture && ./download_test_tool_extract_dars.sh`
 
 ## First Participant Node
-- `sbt "run --role ledger,time,provision --port 11111" -J-DfabricConfigFile=config.json`
+- `sbt "run --role ledger,time,provision --port 11111" -J-DfabricConfigFile=config-local.yaml`
 
 ## Second Participant Node
-- `sbt "run --role ledger --port 12222" -J-DfabricConfigFile=config.json`
+- `sbt "run --role ledger --port 12222" -J-DfabricConfigFile=config-local.yaml`
 
 ## Third Participant Node
-- `sbt "run --role ledger --port 13333 src/test/fixture/SemanticTests.dar src/test/fixture/Test-stable.dar" -J-DfabricConfigFile=config.json`
+- `sbt "run --role ledger --port 13333 src/test/fixture/SemanticTests.dar src/test/fixture/Test-stable.dar" -J-DfabricConfigFile=config-local.yaml`
 
 ## Run Ledger Test Tool against all nodes
 - `java -jar ledger-api-test-tool.jar localhost:11111 --include=SemanticTests --timeout-scale-factor 2.0`
