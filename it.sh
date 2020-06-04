@@ -40,9 +40,24 @@ export CONFIGTX=${CONFIGTX}
 
 echo "Launching Fabric network and DAML-on-Fabric server with Authentication"
 
-declare -a auths_certs=("--auth-jwt-rs256-crt=./data/ledger_certs/rs256_jwt_token.crt" "--auth-jwt-es256-crt=./data/ledger_certs/es256_jwt_token.crt" "--auth-jwt-es512-crt=./data/ledger_certs/es512_jwt_token.crt" "--auth-jwt-hs256-unsafe=someunsafetoken" "--auth-jwt-rs256-jwks=http://jwt-provider:8088")
-declare -a auths_tokens=("--access-token-file=./data/ledger_tokens/rs256_jwt_token" "--access-token-file=./data/ledger_tokens/es256_jwt_token" "--access-token-file=./data/ledger_tokens/es512_jwt_token" "--access-token-file=./data/ledger_tokens/hs256_jwt_token" "--access-token-file=./data/ledger_tokens/jwks_jwt_token")
-declare -a party_users=("Alice" "Bob" "Bank_A" "Bank_B" "Charlie")
+declare -a auths_certs=(\
+"--auth-jwt-rs256-crt=./data/ledger_certs/rs256_jwt_token.crt" \
+"--auth-jwt-es256-crt=./data/ledger_certs/es256_jwt_token.crt" \
+"--auth-jwt-es512-crt=./data/ledger_certs/es512_jwt_token.crt" \
+"--auth-jwt-hs256-unsafe=intellecteudigitalasset" \
+"--auth-jwt-rs256-jwks=http://jwt-provider:8088")
+declare -a auths_tokens=(\
+"--access-token-file=./data/ledger_tokens/rs256_jwt_token" \
+"--access-token-file=./data/ledger_tokens/es256_jwt_token" \
+"--access-token-file=./data/ledger_tokens/es512_jwt_token" \
+"--access-token-file=./data/ledger_tokens/hs256_jwt_token" \
+"--access-token-file=./data/ledger_tokens/jwks_jwt_token")
+declare -a party_users=(\
+"Alice" \
+"Bob" \
+"Bank_A" \
+"Bank_B" \
+"Charlie")
 
 LEDGER_AUTH=""
 LEDGER_TOKEN=""
