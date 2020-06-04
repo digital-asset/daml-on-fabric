@@ -101,7 +101,7 @@ jobs:
   blackduck-build:
     working_directory: ~/builddir
     docker:
-      - image: openjdk:8
+      - image: circleci/openjdk:8-jdk
     environment:
       SBT_VERSION: 1.2.8
     resource_class: xlarge
