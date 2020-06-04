@@ -99,9 +99,6 @@ jobs:
         # - run-integration-test
             
   blackduck-build:
-    executor:
-      name: go/default
-      tag: '1.14'
     working_directory: ~/builddir
     docker:
       - image: openjdk:8
