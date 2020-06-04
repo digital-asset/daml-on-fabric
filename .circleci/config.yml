@@ -2,14 +2,20 @@
 # SPDX-License-Identifier: Apache-2.0
 
 ################################################################################
+# Scala CircleCI 2.0 configuration file
+# Check https://circleci.com/docs/2.0/sample-config/ for more details
+#
+
 version: 2
 jobs:
   build:
-    working_directory: ~/samplescala
+    working_directory: ~/repo
     docker:
-      - image: openjdk:8
+      - image: circleci/openjdk:8-jdk
     environment:
-      SBT_VERSION: 1.0.4
+      SBT_VERSION: 1.2.8
+      JVM_OPTS: -Xmx3200m
+      TERM: dumb      
     resource_class: xlarge
     steps:
       - run: echo 'export ARTIFACT_BUILD=$CIRCLE_PROJECT_REPONAME-$CIRCLE_BUILD_NUM.zip' >> $BASH_ENV
@@ -44,9 +50,15 @@ jobs:
           name: Install fabric-tools
           command: |
               curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 -s
+      # Download and cache dependencies
       - restore_cache:
-          # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
-          key: sbt-cache
+          keys:
+            - v1-dependencies-{{ checksum "build.sbt" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+            
+      #- run: cat /dev/null | sbt test:compile
+      
       - run:
           name: Check formatting
           command: make format-check
@@ -65,8 +77,9 @@ jobs:
             ls
             make it
       - save_cache:
-          key: sbt-cache
           paths:
             - "~/.ivy2/cache"
             - "~/.sbt"
             - "~/.m2"
+          key: v1-dependencies--{{ checksum "build.sbt" }}            
+            
