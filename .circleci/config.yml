@@ -96,7 +96,7 @@ jobs:
     steps:
       - setup-build
       - run-build
-        # - run-integration-test
+      - run-integration-test
             
   blackduck-build:
     working_directory: ~/builddir
@@ -117,13 +117,13 @@ workflows:
       - build
 
   blackduck:
-    #    triggers:
-    #     - schedule:
-    #         cron: "0 0 * * *"
-    #         filters:
-    #            branches:
-    #               only:
-    #                 - daily-blackduck
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+             branches:
+                only:
+                  - master
     jobs:
       - blackduck-build:
           context: blackduck
