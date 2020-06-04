@@ -2,21 +2,10 @@
 # SPDX-License-Identifier: Apache-2.0
 
 ################################################################################
-# Scala CircleCI 2.0 configuration file
-# Check https://circleci.com/docs/2.0/sample-config/ for more details
-#
+version: 2.1
 
-version: 2
-jobs:
-  build:
-    working_directory: ~/repo
-    docker:
-      - image: circleci/openjdk:8-jdk
-    environment:
-      SBT_VERSION: 1.2.8
-      JVM_OPTS: -Xmx3200m
-      TERM: dumb      
-    resource_class: xlarge
+commands:
+  setup-build:
     steps:
       - run: echo 'export ARTIFACT_BUILD=$CIRCLE_PROJECT_REPONAME-$CIRCLE_BUILD_NUM.zip' >> $BASH_ENV
       - checkout
@@ -36,16 +25,16 @@ jobs:
       - run:
           name: Install fabric-tools
           command: |
-              curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 -s
+            curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 -s
       # Download and cache dependencies
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "build.sbt" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-            
-      #- run: cat /dev/null | sbt test:compile
-      
+
+  run-build:
+    steps:
       - run:
           name: Check formatting
           command: make format-check
@@ -58,6 +47,10 @@ jobs:
       - run:
           name: Package
           command: make package
+      #- run: cat /dev/null | sbt test:compile
+
+  run-integration-test:
+    steps:
       - run:
           name: Integration test
           command: |
@@ -68,5 +61,72 @@ jobs:
             - "~/.ivy2/cache"
             - "~/.sbt"
             - "~/.m2"
-          key: v1-dependencies--{{ checksum "build.sbt" }}            
+          key: v1-dependencies--{{ checksum "build.sbt" }}
+
+  blackduck-scan:
+    steps:
+      - run:
+          name: Run Blackduck Detect
+          command: |
+            bash <(curl -s https://raw.githubusercontent.com/DACH-NY/security-blackduck/master/synopsys-detect) \
+            ci-build DACH-NY_daml-on-fabric master \
+            --logging.level.com.synopsys.integration=DEBUG \
+            --detect.notices.report=true \
+            --detect.excluded.detector.types=GO_MOD \
+            --detect.report.timeout=480
+#            --detect.docker.image=digitalasset/daml-on-fabric:2.0.0 \
+#            --detect.docker.image=digitalasset/daml-on-fabric-chaincode:2.0.0 \
+      - run:
+          command: cp DACH_NY_daml_on_fabric_master_Black_Duck_Notices_Report.txt NOTICES
+      - persist_to_workspace:
+          root: .
+          paths:
+            - "NOTICES"
+
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/openjdk:8-jdk
+    environment:
+      SBT_VERSION: 1.2.8
+      JVM_OPTS: -Xmx3200m
+      TERM: dumb      
+    resource_class: xlarge
+    steps:
+      - setup-build
+      - run-build
+        # - run-integration-test
             
+  blackduck-build:
+    executor:
+      name: go/default
+      tag: '1.14'
+    working_directory: ~/builddir
+    docker:
+      - image: openjdk:8
+    environment:
+      SBT_VERSION: 1.2.8
+    resource_class: xlarge
+    steps:
+      - setup-build
+      - run-build
+      - blackduck-scan
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
+
+  blackduck:
+    #    triggers:
+    #     - schedule:
+    #         cron: "0 0 * * *"
+    #         filters:
+    #            branches:
+    #               only:
+    #                 - daily-blackduck
+    jobs:
+      - blackduck-build:
+          context: blackduck
