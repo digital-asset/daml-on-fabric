@@ -19,19 +19,6 @@ jobs:
     resource_class: xlarge
     steps:
       - run: echo 'export ARTIFACT_BUILD=$CIRCLE_PROJECT_REPONAME-$CIRCLE_BUILD_NUM.zip' >> $BASH_ENV
-      - run:
-          name: Get sbt binary
-          command: |
-            apt update && apt install -y curl
-            curl -L -o sbt-$SBT_VERSION.deb https://dl.bintray.com/sbt/debian/sbt-$SBT_VERSION.deb
-            dpkg -i sbt-$SBT_VERSION.deb
-            rm sbt-$SBT_VERSION.deb
-            apt-get update
-            apt-get install -y sbt python-pip git
-            apt-get install -y docker-compose
-            pip install awscli
-            pip install urllib3==1.22
-            apt-get clean && apt-get autoclean
       - checkout
       - setup_remote_docker
       - run:
