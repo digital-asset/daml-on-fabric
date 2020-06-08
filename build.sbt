@@ -82,5 +82,6 @@ lazy val root = (project in file("."))
       "org.jodd" % "jodd-json" % "5.0.12",
       "com.fasterxml.jackson.dataformat" % "jackson-dataformat-yaml" % jacksonDataFormatYamlVersion
     ),
-    resolvers += Resolver.mavenLocal
+    resolvers += Resolver.mavenLocal,
+    useCoursier := false
   )
