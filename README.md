@@ -251,3 +251,6 @@ This will clean, compile, build and package the code, deploy the network and run
 
 If there is a need for further customization, there are a few options that can be changed.
 Please refer to this [README](./src/test/fixture/README.md) for further information.
+
+# Architecture Guide
+A more detailed description of the technical architecture can be found in [Architecture Guide](./docs/DAML_on_Fabric_v2_Architecture.pdf) 
