@@ -16,7 +16,7 @@ if [[ "${DOCKER_COMPOSE_FILE}" == "" ]]; then
 fi
 
 if [[ "${DOCKER_NETWORK}" == "" ]]; then
-  DOCKER_NETWORK="daml-on-fabric"
+  DOCKER_NETWORK="damlonfabric"
 fi
 
 export ORG_HYPERLEDGER_FABRIC_SDKTEST_VERSION="2.0.0"
