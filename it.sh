@@ -65,7 +65,7 @@ PARTY_USER=""
 ALLOCATE_PARTIES_COMMAND=""
 
 export DOCKER_COMPOSE_FILE=docker-compose-ci.yaml
-export DOCKER_NETWORK=daml-on-fabric_ci
+export DOCKER_NETWORK=damlonfabric_ci
 
 ./fabric.sh down
 ./fabric.sh clean
@@ -86,7 +86,7 @@ localhost:12222 \
 --concurrent-test-runs=2 \
 --load-scale-factor=0.10 \
 --verbose"
-docker exec -it daml-on-fabric_ci_daml-on-fabric-2_1 ${TEST_COMMAND}
+docker exec -it damlonfabric_ci_daml-on-fabric-2_1 ${TEST_COMMAND}
 
 echo "Launching the auth tests..."
 
@@ -104,14 +104,14 @@ do
   sleep 120s
 
   if [[ "$LEDGER_AUTH" = "--auth-jwt-rs256-jwks=http://jwt-provider:8088" ]]; then
-    docker run -d -p 8088:8088 --name=jwt-provider --network daml-on-fabric_ci_default brandwatch/jwks-jwt-provider
+    docker run -d -p 8088:8088 --name=jwt-provider --network damlonfabric_ci_default brandwatch/jwks-jwt-provider
     sleep 10
-    docker exec -it daml-on-fabric_ci_daml-on-fabric-2_1 bash get_jwks_token.sh
+    docker exec -it damlonfabric_ci_daml-on-fabric-2_1 bash get_jwks_token.sh
   fi
 
   export ALLOCATE_PARTIES_COMMAND="daml ledger allocate-parties --host localhost --port 12222 $LEDGER_TOKEN $PARTY_USER"
   echo "Launching the allocate-parties command... ${ALLOCATE_PARTIES_COMMAND}"
-  docker exec -it daml-on-fabric_ci_daml-on-fabric-2_1 ${ALLOCATE_PARTIES_COMMAND}
+  docker exec -it damlonfabric_ci_daml-on-fabric-2_1 ${ALLOCATE_PARTIES_COMMAND}
 
 #  export TEST_GRPC_COMMAND="grpcurl localhost:12222 list; grpcurl -plaintext localhost:12222 com.daml.ledger.api.v1.admin.PartyManagementService/AllocateParty; grpcurl -plaintext localhost:12222 com.daml.ledger.api.v1.admin.PartyManagementService/ListKnownParties"
 
