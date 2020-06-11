@@ -178,18 +178,8 @@ This JAR is generated when the make it command
 
 ```
 cd ~/daml-on-fabric/src/test/fixture
-```
-
-<!--- Download test tool and extract dars -->
-```
 ./download_test_tool_extract_dars.sh
-```
-<!--- Upload all required dars -->
-```
 ls *.dar | xargs -I {} daml ledger upload-dar {} --host localhost --port 6865
-```
-<!--- Run the test tool -->
-```
 java -jar ledger-api-test-tool.jar --all-tests localhost:6865 --timeout-scale-factor=10
 ```
 
