@@ -11,20 +11,16 @@ This is an implementation of DAML ledger that stores data (transactions and stat
 ## Prerequisites
 
 These are the minimal requirements that this flow was tested with.
-Docker and Docker-Compose are required to run a Hyperledger Fabric network, and greater versions of docker generally can be used. Note: running Docker as root is not recommended, this may cause issues.
+Docker and Docker-Compose are required to run a Hyperledger Fabric network, and greater versions of docker generally can be used. Note: running Docker as root is not recommended.
 
-Everything else is a typical dependency list for building and running a DAML ledger. Building and running with greater major versions of SBT, Java, Scala, Fabric and DAML SDK than those listed below may be problematic.
-
-- **docker-compose** version 1.24.0
-- **docker CE** version 18.09.6
+- **docker-compose** version 1.24.0 or greater
+- **docker CE** version 18.09.6 or greater
 - **Java / JDK** version 1.8.0.x
-- **Scala** version 2.12.11
-- **SBT** version 1.2.8
-- **Fabric SDK Java** version 2.1.0
-- **Fabric** version 2.1.0
 - **DAML SDK** version 1.2.0
+- **Hyperledger Fabric Tools** version 2.0.0 or greater
 
 You can get the latest Hyperledger Fabric binaries and tools from the following command:
+
 This will download the necessary fabric tools binaries to /bin under the directory from which it is run
 
 ```
@@ -43,7 +39,7 @@ For the sake of cleanliness, we are using the directory `~/daml-on-fabric` as th
 
 ```
 $ cd
-$ git clone git@github.com:digital-asset/daml-on-fabric.git
+$ git clone https://github.com/digital-asset/daml-on-fabric.git
 ```
 
 ## Running a local Hyperledger Fabric network
@@ -106,7 +102,7 @@ $ ./restart_fabric.sh
 ### Step 2. Extract and build Quick Start project 
 
 ```
-$ cd ~/daml-on-fabric 
+$ cd
 $ rm -rf quickstart
 $ daml new quickstart quickstart-java
 Created a new project in "quickstart" based on the template "quickstart-java".
@@ -120,7 +116,7 @@ Created .daml/dist/quickstart-0.0.1.dar
 
 ```
 $ cd ~/daml-on-fabric/
-$ sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar"
+$ sbt "run --port 6865 --role provision,time,ledger,explorer ../quickstart/.daml/dist/quickstart-0.0.1.dar"
 ```
 
 ### Step 4. Run DAML Navigator
