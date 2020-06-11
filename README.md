@@ -175,6 +175,20 @@ For testing purposes, the Ledger API provides a tool to execute some tests again
 You can find the ledger-api-test-tool.jar in the src/test/fixture folder. 
 This JAR is generated when the make it command
 
+
+```
+cd ~/daml-on-fabric/src/test/fixture
+```
+
+<!--- Download test tool and extract dars -->
+```
+./download_test_tool_extract_dars.sh
+```
+<!--- Upload all required dars -->
+```
+ls *.dar | xargs -I {} daml ledger upload-dar {} --host localhost --port 6865
+```
+<!--- Run the test tool -->
 ```
 java -jar ledger-api-test-tool.jar --all-tests localhost:6865 --timeout-scale-factor=10
 ```
@@ -192,7 +206,7 @@ We can also run the Ledger API with authentication enabled. The ledger API uses 
     * hs256  (this is **unsafe**)
     * rsa256 jwks
     
-To enable the authentication, start the Ledger API like the following examples:
+To enable the authentication, follow one of the examples below.
 
 To run with rsa256 jwt authentication enabled:
 
@@ -241,8 +255,7 @@ For more information, regarding authentication on the Ledger API and token gener
 
 ### Step 10. Running with CI
 
-This project has it's own CI environment for code quality assurance. The configurations of this project can also be used in any other CI, that is, of course, well configured.
-To run everything, just run one command:
+This project has its own CI environment that builds, spins up the network, and runs the ledger tests and the authentication tests.  To replicate the same steps as are run in CI locally, you can run this command:
 
 ```
 $ make it
