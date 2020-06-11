@@ -21,7 +21,7 @@ jobs:
     - name: Build daml-on-fabric Docker image
       run: cd src/test/fixture && mkdir tmp && mkdir tmp/data && ./download_test_tool_extract_dars.sh && ./build_ci.sh
     - name: Build daml-on-fabric-chaincode Docker image
-      run: cd chaincode-image && docker build . --file Dockerfile --tag bhealey/daml-on-fabric-chaincode:2.0.0      
+      run: cd chaincode-image && docker build . --file Dockerfile --tag digitalasset/daml-on-fabric-chaincode:2.0.0      
     - name: Anchore scan daml-on-fabric
       uses: anchore/scan-action@master
       with:
