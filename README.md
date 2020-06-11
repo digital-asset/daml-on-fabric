@@ -4,7 +4,7 @@
 
 # DAML on Fabric
 
-DAML ledger implementation that allows running DAML applications on Hyperledger Fabric 2.x
+DAML ledger implementation enabling DAML applications to run on Hyperledger Fabric 2.x
 
 # Quick Start Guide
 
