@@ -16,22 +16,22 @@ jobs:
     steps:
     - name: Checkout the code
       uses: actions/checkout@v2
-    - name: Build the Docker image
+    - name: Package Scala code
       run: make package      
-    - name: Build the Docker image
+    - name: Build daml-on-fabric Docker image
       run: cd src/test/fixture && mkdir tmp && mkdir tmp/data && ./download_test_tool_extract_dars.sh && ./build_ci.sh
-    - name: Build the Docker image
+    - name: Build daml-on-fabric-chaincode Docker image
       run: cd chaincode-image && docker build . --file Dockerfile --tag bhealey/daml-on-fabric-chaincode:2.0.0      
-    - name: Run the local Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
+    - name: Anchore scan daml-on-fabric
       uses: anchore/scan-action@master
       with:
-        image-reference: "bhealey/daml-on-fabric:2.0.0"
+        image-reference: "digitalasset/daml-on-fabric:2.0.0"
         dockerfile-path: "src/test/fixture/Dockerfile"
         acs-report-enable: true
-    - name: Run the local Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
+    - name: Anchore scan daml-on-fabric-chaincode
       uses: anchore/scan-action@master
       with:
-        image-reference: "bhealey/daml-on-fabric-chaincode:2.0.0"
+        image-reference: "digitalasset/daml-on-fabric-chaincode:2.0.0"
         dockerfile-path: "chaincode-image/Dockerfile"
         acs-report-enable: true
     - name: Upload Anchore Scan Report
