@@ -4,7 +4,7 @@
 
 # DAML on Fabric
 
-This is an implementation of DAML ledger that stores data (transactions and state) using Hyperledger Fabric 2.1
+DAML ledger implementation that allows running DAML applications on Hyperledger Fabric 2.x
 
 # Quick Start Guide
 
@@ -21,37 +21,30 @@ Docker and Docker-Compose are required to run a Hyperledger Fabric network, and 
 
 You can get the latest Hyperledger Fabric binaries and tools from the following command:
 
-This will download the necessary fabric tools binaries to /bin under the directory from which it is run
+This will download the necessary fabric tools binaries to /bin under the <download_directory> from which it is run
 
-```
-$ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.1.0 -s
-```
+- `cd <download_directory>`
+- `curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.1.0 -s`
 
 Now add the <download_directory>/bin to your PATH so that the fabric tools are available for use
 
-```
-export PATH=<download_directory>/bin:$PATH
-```
+- `export PATH=<download_directory>/bin:$PATH`
 
 ## Cloning DAML-on-Fabric
 
 For the sake of cleanliness, we are using the directory `~/daml-on-fabric` as the root for the repository.
 
-```
-$ cd
-$ git clone https://github.com/digital-asset/daml-on-fabric.git
-```
+- `cd`
+- `git clone https://github.com/digital-asset/daml-on-fabric.git`
 
 ## Running a local Hyperledger Fabric network
 
 This is achieved by running a Docker-Compose network which is a typical way to set up Fabric for development environments. 
-Our particular example sets up a network of 5 peers, of which two will be used for endorsement.
+Our particular example sets up a network of 2 endorsing peers.
 
-```
-$ cd ~/daml-on-fabric/src/test/fixture/
-$ ./gen.sh
-$ ./restart_fabric.sh
-```
+- `cd ~/daml-on-fabric/src/test/fixture/`
+- `./gen.sh`
+- `./restart_fabric.sh`
 
 The script used is a shortcut for `./fabric.sh down && ./fabric.sh up` that will erase all current data and start a fresh network.
 
@@ -62,17 +55,13 @@ Check out the [deployment guide](DEPLOYMENT_GUIDE.md) for a demonstration on dep
 
 The basic command to run the ledger right from the repository is like this:
 
-```
-$ sbt "run --role <roles> [--port NNNN] [DAMLArchive.dar DAMLArchive2.dar ...]"
-```
+- `sbt "run --role <roles> [--port NNNN] [DAMLArchive.dar DAMLArchive2.dar ...]"`
 
 **Important: the ledger will connect to a Fabric network specified in *config-local.yaml* file.**
 
-Generally, if you run the ledger not against a local network, you need to provide additional argument to SBT, like this: 
+If you want to run the ledger against something other than the local Fabric test network you should specify the configuration of the network providing the additional argument to SBT, like this: 
 
-```
-$ sbt "run ..." -J-DfabricConfigFile=<configuration file>
-```
+- `sbt "run ..." -J-DfabricConfigFile=<configuration file>`
 
 By default, it will use "config-local.yaml", which you can use for reference.
 
@@ -82,57 +71,56 @@ You may have noticed that the required argument for DAML-on-Fabric is "role".
 
 There are several roles that define which parts of the service are going to be executed:
 
-- `provision`: will connect to Fabric and prepare it to be used as storage for a DAML ledger.
-- `ledger`: will run a DAML Ledger API endpoint at a port specified with `--port` argument.
-- `time`: will run a DAML time service, which writes heartbeats to the ledger. There should be exactly one time service per ledger.
-- `explorer`: will run a block explorer service that exposes a REST API to view the content of blocks and transactions inside the Fabric network for debugging or demonstration purposes. The explorer will run at a port specified in *config-local.yaml* file. It provides REST API that responds at endpoints `/blocks[?id=...]` and `/transactions[?id=...]`
+- `provision`
+   - will connect to Fabric and prepare it to be used as storage for a DAML ledger.
+- `ledger`
+   - will run a DAML Ledger API endpoint at a port specified with `--port` argument.
+- `time`
+   - will run a DAML time service, which writes heartbeats to the ledger. There should be exactly one time service per ledger.
+- `explorer`
+   - will run a block explorer service that exposes a REST API to view the content of blocks and transactions inside the Fabric network for debugging or demonstration purposes. The explorer will run at a port specified in *config-local.yaml* file. It provides REST API that responds at endpoints `/blocks[?id=...]` and `/transactions[?id=...]`
 
-One ledger may perform multiple roles at the same time, in which case roles are separated with comma. Example of this will be given later (we are using a single node just for the example).
+One ledger may perform multiple roles at the same time, in which case roles are comma-separated. Example of this will be given later (we are using a single node just for the example).
 
 ## Running Java Quick Start against DAML-on-Fabric
 
 ### Step 1. Start Hyperledger Fabric
 
-```
-$ cd ~/daml-on-fabric/src/test/fixture/
-$ ./gen.sh
-$ ./restart_fabric.sh
-```
+- `cd ~/daml-on-fabric/src/test/fixture/`
+- `./gen.sh`
+- `./restart_fabric.sh`
 
 ### Step 2. Extract and build Quick Start project 
 
+- `cd`
+- `rm -rf quickstart`
+- `daml new quickstart quickstart-java`
 ```
-$ cd
-$ rm -rf quickstart
-$ daml new quickstart quickstart-java
 Created a new project in "quickstart" based on the template "quickstart-java".
-$ cd ~/quickstart/
-$ daml build
+```
+- `cd quickstart`
+- `daml build`
+```
 Compiling daml/Main.daml to a DAR
 Created .daml/dist/quickstart-0.0.1.dar
 ```
 
 ### Step 3. Run the Ledger with Quick Start DAR archive
 
-```
-$ cd ~/daml-on-fabric/
-$ sbt "run --port 6865 --role provision,time,ledger,explorer ../quickstart/.daml/dist/quickstart-0.0.1.dar"
-```
+- `cd ~/daml-on-fabric/`
+- `sbt "run --port 6865 --role provision,time,ledger,explorer ../quickstart/.daml/dist/quickstart-0.0.1.dar"`
 
-### Step 4. Run DAML Navigator
-
-```
-$ cd ~/quickstart/
-daml navigator server localhost 6865 --port 4000
-```
-
-### Step 5. Allocate parties on the ledger
+### Step 4. Allocate parties on the ledger
 
 There's no automatic mapping of DAML parties to parties on the Fabric ledger. We'll need to create the parties on Fabric that match the party names in DAML:
-```
-$ cd ~/quickstart/
-daml ledger allocate-parties --host localhost --port 6865 Alice Bob Carol USD_Bank EUR_Bank
-```
+
+- `cd ~/quickstart/`
+- `daml ledger allocate-parties --host localhost --port 6865 Alice Bob Carol USD_Bank EUR_Bank`
+
+### Step 5. Run DAML Navigator
+
+- `cd ~/quickstart/`
+- `daml navigator server localhost 6865 --port 4000`
 
 ### Step 6. Conclusion
 
@@ -143,6 +131,7 @@ You should have the following services running:
 - DAML Navigator at http://localhost:4000/
 - Hyperledger Fabric block explorer at http://localhost:8080/blocks and http://localhost:8080/transactions
 - DAML Ledger API endpoint at *localhost:6865*
+- Fabric Orderer and Peers running at ports as defined in docker compose file
 
 More information on Quick Start example and DAML in general can be found here:
 
@@ -180,30 +169,30 @@ To enable the authentication, start the Ledger API like the following examples:
 
 To run with rsa256 jwt authentication enabled:
 
-    `$ sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-rs256-crt=<path-to-crt-file>"`
+- `sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-rs256-crt=<path-to-crt-file>"`
 
 To run with esda256 jwt authentication enabled:
 
-    `$ sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-es256-crt=<path-to-crt-file>"`
+- `sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-es256-crt=<path-to-crt-file>"`
 
 To run with esda512 jwt authentication enabled:
 
-    `$ sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-es512-crt=<path-to-crt-file>"`
+- `sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-es512-crt=<path-to-crt-file>"`
 
 To run with hs256 jwt authentication enabled:
 
-    `$ sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-hs256-unsafe=<path-to-crt-file>"`
+- `sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-hs256-unsafe=<path-to-crt-file>"`
 
 To run with rsa256 jwks jwt authentication enabled:
 
-    `$ sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-rs256-jwkse=<URI-to-jwks-service>"`
+- `sbt "run --port 6865 --role provision,time,ledger,explorer ./quickstart/.daml/dist/quickstart-0.0.1.dar --auth-jwt-rs256-jwkse=<URI-to-jwks-service>"`
 
 
 If authentication is enabled, then all the calls to the Ledger API will need to be authenticated. Given the the authentication, please use the following:
 
 To run daml commands for Legder API with any jwt authentication enabled
 
-    `$ daml ledger allocate-parties --host localhost --port 6865 Alice Bob Carol USD_Bank EUR_Bank --access-token-file=<path-to-token>`
+- `daml ledger allocate-parties --host localhost --port 6865 Alice Bob Carol USD_Bank EUR_Bank --access-token-file=<path-to-token>`
 
 
 A few examples for this type of authentication can be found in **src/test/fixture/data/ledger_certs** and **src/test/fixture/data/ledger_tokens**
@@ -217,7 +206,7 @@ For more information, regarding authentication on the Ledger API and token gener
 This project has it's own CI environment for code quality assurance. The configurations of this project can also be used in any other CI, that is, of course, well configured.
 To run everything, just run one command:
 
-    `$ make it`
+- `$ make it`
 
 This will clean, compile, build and package the code, deploy the network and run all the necessary tests.
 
