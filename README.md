@@ -90,7 +90,7 @@ There are several roles that define which parts of the service are going to be e
 - `explorer`
    - will run a block explorer service that exposes a REST API to view the content of blocks and transactions inside the Fabric network for debugging or demonstration purposes. The explorer will run at a port specified in *config-local.yaml* file. It provides REST API that responds at endpoints `/blocks[?id=...]` and `/transactions[?id=...]`
 
-One ledger may perform multiple roles at the same time, in which case roles are comma-separated. Example of this will be given later (we are using a single node just for the example).
+One ledger may perform multiple roles at the same time, in which case roles are comma-separated. 
 
 ## Running Java Quick Start against DAML-on-Fabric
 
