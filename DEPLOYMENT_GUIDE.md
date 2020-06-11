@@ -33,7 +33,7 @@ Now that we have our DAML app built it needs a place to run, let's grab `daml-on
     Received 2 tx proposal responses. Successful+verified: 2 . Failed: 0  - Fcn: RawBatchWrite 
     13:57:11.793 INFO  c.d.p.a.s.LedgerConfigProvider - New ledger configuration Configuration(1,TimeModel(PT0S,PT2M,PT2M),PT24H) found at Absolute(00000000000000010000000000000000)
     13:57:11.931 INFO  c.d.p.a.LedgerApiServer - Listening on 0.0.0.0:6865 over plain text.
-    13:57:11.934 INFO  c.d.p.a.StandaloneApiServer - Initialized API server version 1.2.0-snapshot.20200520.4224.0.2af134ca with ledger-id = fabric-ledger, port = 6865, dar file = List()
+    13:57:11.934 INFO  c.d.p.a.StandaloneApiServer - Initialized API server version 1.2.0 with ledger-id = fabric-ledger, port = 6865, dar file = List()
     ```
 
 ### Deploying Our DAML App

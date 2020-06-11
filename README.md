@@ -22,7 +22,7 @@ Everything else is a typical dependency list for building and running a DAML led
 - **SBT** version 1.2.8
 - **Fabric SDK Java** version 2.1.0
 - **Fabric** version 2.1.0
-- **DAML SDK** version 1.2.0-snapshot-<latest>
+- **DAML SDK** version 1.2.0
 
 You can get the latest Hyperledger Fabric binaries and tools from the following command:
 This will download the necessary fabric tools binaries to /bin under the directory from which it is run
