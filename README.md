@@ -19,9 +19,7 @@ Docker and Docker-Compose are required to run a Hyperledger Fabric network, and 
 - **DAML SDK** version 1.2.0
 - **Hyperledger Fabric Tools** version 2.0.0 or greater
 
-You can get the latest Hyperledger Fabric binaries and tools from the following command:
-
-This will download the necessary fabric tools binaries to /bin under the <download_directory> from which it is run
+You can get the latest Hyperledger Fabric Tools by running the following command, and binaries will be downloaded to  <download_directory>/bin
 
 ```
 cd <download_directory>
@@ -69,7 +67,7 @@ sbt "run --role <roles> [--port NNNN] [DAMLArchive.dar DAMLArchive2.dar ...]"
 
 **Important: the ledger will connect to a Fabric network specified in *config-local.yaml* file.**
 
-If you want to run the ledger against something other than the local Fabric test network you should specify the configuration of the network providing the additional argument to SBT, like this: 
+If you want to run the ledger against something other than the local Fabric test network, you should specify the configuration of the network by providing the additional `fabricConfigFile` argument, as shown below: 
 
 ```
 sbt "run ..." -J-DfabricConfigFile=<configuration file>
@@ -196,7 +194,7 @@ We can also run the Ledger API with authentication enabled. The ledger API uses 
     * hs256  (this is **unsafe**)
     * rsa256 jwks
     
-To enable the authentication, follow one of the examples below.
+To enable authentication, follow one of the examples below.
 
 To run with rsa256 jwt authentication enabled:
 
@@ -245,7 +243,7 @@ For more information, regarding authentication on the Ledger API and token gener
 
 ### Step 10. Running with CI
 
-This project has its own CI environment that builds, spins up the network, and runs the ledger tests and the authentication tests.  To replicate the same steps as are run in CI locally, you can run this command:
+This project has its own CI environment that builds, spins up the network, and runs the ledger tests and the authentication tests. To replicate the same steps as are run in CI locally, you can run this command:
 
 ```
 $ make it
