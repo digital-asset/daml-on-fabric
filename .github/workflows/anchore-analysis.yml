@@ -19,7 +19,7 @@ jobs:
     - name: Build the Docker image
       run: make package      
     - name: Build the Docker image
-      run: docker build . --file src/test/fixture/Dockerfile --tag bhealey/daml-on-fabric:2.0.0
+      run: cd src/test/fixture && ./download_test_tool_extract_dars.sh && ./build_ci.sh
     - name: Build the Docker image
       run: docker build . --file chaincode-image/Dockerfile --tag bhealey/daml-on-fabric-chaincode:2.0.0      
     - name: Run the local Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
