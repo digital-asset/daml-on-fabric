@@ -67,7 +67,8 @@ commands:
     steps:
       - run:
          name: Run Blackduck CoPilot
-         command: bash <(curl -s https://copilot.blackducksoftware.com/ci/circle2/scripts/upload)
+         command: bash <(curl -s https://copilot.blackducksoftware.com/ci/circle2/scripts/upload) \
+                  --detect.excluded.detector.types=SBT
 
   blackduck-scan:
     steps:
