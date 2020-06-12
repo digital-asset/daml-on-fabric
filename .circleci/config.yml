@@ -68,7 +68,7 @@ commands:
       - run:
          name: Run Blackduck CoPilot
          command: |
-           echo "export COPILOT_DETECT_OPTIONS=--detect.excluded.detector.types=SBT" >> $BASH_ENV
+           echo "export COPILOT_DETECT_OPTIONS=--detect.excluded.detector.types=SBT --logging.level.com.synopsys.integration=DEBUG --detect.tools=DETECTOR,SIGNATURE_SCAN,BINARY_SCAN,DOCKER" >> $BASH_ENV
            bash <(curl -s https://copilot.blackducksoftware.com/ci/circle2/scripts/upload)
 
   blackduck-scan:
