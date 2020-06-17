@@ -204,6 +204,27 @@ object Cli {
         )
         .action((eventsPageSize, config) => config.copy(eventsPageSize = eventsPageSize))
 
+
+      opt[Long]("max-state-value-cache-size")
+        .optional()
+        .text(
+          s"The maximum size of the cache used to deserialize state values, in MB. By default, nothing is cached.")
+        .action((maximumStateValueCacheSize, config) =>
+          config.copy(stateValueCache =
+            config.stateValueCache.copy(maximumWeight = maximumStateValueCacheSize * 1024 * 1024)))
+
+      opt[Long]("max-lf-value-translation-cache-entries")
+        .optional()
+        .text(
+          s"The maximum size of the cache used to deserialize DAML-LF values, in number of allowed entries. By default, nothing is cached.")
+        .action((maximumLfValueTranslationCacheEntries, config) =>
+          config.copy(
+            lfValueTranslationEventCache = config.lfValueTranslationEventCache.copy(
+              maximumWeight = maximumLfValueTranslationCacheEntries),
+            lfValueTranslationContractCache = config.lfValueTranslationContractCache.copy(
+              maximumWeight = maximumLfValueTranslationCacheEntries),
+          ))
+
       private val seedingTypeMap = Map[String, Seeding](
         "testing-static" -> Seeding.Static,
         "testing-weak" -> Seeding.Weak,
