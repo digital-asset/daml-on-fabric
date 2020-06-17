@@ -728,7 +728,8 @@ object ParticipantStateIntegrationSpecBase {
       ledgerEffectiveTime = aLedgerEffectiveTime,
       workflowId = Some(Ref.LedgerString.assertFromString("tests")),
       submissionTime = aLedgerEffectiveTime.addMicros(-1000),
-      submissionSeed = crypto.Hash.assertFromString("0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"),
+      submissionSeed = crypto.Hash
+        .assertFromString("0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"),
       optUsedPackages = Some(Set.empty),
       optNodeSeeds = Some(ImmArray.empty),
       optByKeyNodes = Some(ImmArray.empty)
