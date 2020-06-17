@@ -20,7 +20,8 @@ import com.daml.lf.archive.{Dar, DarReader}
 import com.daml.lf.crypto
 import com.daml.lf.data.Time.Timestamp
 import com.daml.lf.data.{ImmArray, Ref}
-import com.daml.lf.transaction.GenTransaction
+import com.daml.lf.transaction.test.TransactionBuilder
+import com.daml.lf.transaction.{Transaction => Tx}
 import com.daml.logging.LoggingContext
 import com.daml.logging.LoggingContext.newLoggingContext
 import com.daml.metrics.Metrics
@@ -699,7 +700,7 @@ object ParticipantStateIntegrationSpecBase {
   private val IdleTimeout: FiniteDuration = 5.seconds
 
   private val emptyTransaction: SubmittedTransaction =
-    GenTransaction(HashMap.empty, ImmArray.empty)
+    Tx.SubmittedTransaction(TransactionBuilder.Empty)
 
   private val participantId: ParticipantId = Ref.ParticipantId.assertFromString("test-participant")
   private val sourceDescription = Some("provided by test")
@@ -727,10 +728,7 @@ object ParticipantStateIntegrationSpecBase {
       ledgerEffectiveTime = aLedgerEffectiveTime,
       workflowId = Some(Ref.LedgerString.assertFromString("tests")),
       submissionTime = aLedgerEffectiveTime.addMicros(-1000),
-      submissionSeed = Some(
-        crypto.Hash
-          .assertFromString("0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef")
-      ),
+      submissionSeed = crypto.Hash.assertFromString("0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"),
       optUsedPackages = Some(Set.empty),
       optNodeSeeds = Some(ImmArray.empty),
       optByKeyNodes = Some(ImmArray.empty)
