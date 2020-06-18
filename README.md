@@ -23,7 +23,7 @@ You can get the latest Hyperledger Fabric Tools by running the following command
 
 ```
 cd <download_directory>
-curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.1.0 -s
+curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap.sh | bash -s -- 2.1.0 -s
 ```
 
 Now add the <download_directory>/bin to your PATH so that the fabric tools are available for use
@@ -31,6 +31,8 @@ Now add the <download_directory>/bin to your PATH so that the fabric tools are a
 ```
 export PATH=<download_directory>/bin:$PATH
 ```
+
+Full instructions on Fabric Tools can be found at https://hyperledger-fabric.readthedocs.io/en/release-2.0/install.html
 
 ## Cloning DAML-on-Fabric
 
