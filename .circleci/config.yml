@@ -69,7 +69,7 @@ commands:
           name: Run Blackduck Detect
           command: |
             bash <(curl -s https://raw.githubusercontent.com/DACH-NY/security-blackduck/master/synopsys-detect) \
-            ci-build DACH-NY_daml-on-fabric master \
+            ci-build digitalasset_daml-on-fabric master \
             --logging.level.com.synopsys.integration=DEBUG \
             --detect.notices.report=true \
             --detect.excluded.detector.types=GO_MOD \
