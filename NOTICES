@@ -1,21 +1,20 @@
-Copyright (c) 2020 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
-SPDX-License-Identifier: Apache-2.0
+Copyright 2020
 
-[daml-on-fabric : master]
+[digitalasset_daml-on-fabric : master]
 
+Project tier: 1
+Phase: DEVELOPMENT
 Distribution: EXTERNAL
 
-Components:
+Components: 
 
 akka-actor 2.6.1 : Apache License 2.0
-akka-protobuf-v3 2.6.0-RC2 : Apache License 2.0
 akka-protobuf-v3 2.6.1 : Apache License 2.0
 akka-slf4j 2.6.1 : Apache License 2.0
 akka-slf4j 2.6.2 : Apache License 2.0
 akka-stream 2.6.1 : Apache License 2.0
 akka-stream-testkit 2.6.1 : Apache License 2.0
 akka-testkit 2.6.1 : Apache License 2.0
-alecthomas-kingpin v2.2.6 : MIT License
 Animal Sniffer Annotations 1.18 : MIT License
 anorm 2.5.3 : Apache License 2.0
 anorm-tokenizer 2.5.3 : Apache License 2.0
@@ -31,147 +30,70 @@ Apache Extras Companion for log4j 1.2. 1.2.17 : Apache License 2.0
 Apache HttpClient 4.5.10 : Apache License 2.0
 Apache HttpComponents Core 4.4.12 : Apache License 2.0
 Apache log4j 1.2.17 : Apache License 2.0
-beorn7-perks v1.0.0 : MIT License
-bgentry-speakeasy 0.1.0 : Apache License 2.0
-bindings-scala_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
+bindings-scala_2.12 1.2.0 : Apache License 2.0
+bindings-scala_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
 Bouncy Castle 1.63 : MIT License
 Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs 1.63 : MIT License
 brave 4.6.0 : Apache License 2.0
-btree v1.0.0 : Apache License 2.0
-build-info_2.12 1.1.0-snapshot.20200422.3991.0.6391ee9f : Apache License 2.0
-BurntSushi/toml v0.3.1 : MIT License
+build-info_2.12 1.0.0 : Apache License 2.0
+build-info_2.12 1.2.0 : Apache License 2.0
+caching_2.12 1.2.0 : Apache License 2.0
+caching_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
 Caffeine cache 2.8.0 : Apache License 2.0
-census-instrumentation/opencensus-go 0.22.0 : Apache License 2.0
-census-instrumentation/opencensus-go v0.21.0 : Apache License 2.0
-cespare/xxhash v1.1.0 : MIT License
 Checker Qual 2.0.0 : (GNU General Public License v2.0 w/Classpath exception AND MIT License)
 Checker Qual 2.10.0 : MIT License
 Checker Qual 2.5.5 : MIT License
-client9/misspell v0.3.4 : (MIT License AND BSD 3-clause "New" or "Revised" License)
-client_golang v0.9.1 : Apache License 2.0
-client_golang v0.9.3 : Apache License 2.0
-code.googlesource.com/google-api-go-client v0.13.0 : BSD 3-clause "New" or "Revised" License
-code.googlesource.com/google-api-go-client v0.4.0 : BSD 3-clause "New" or "Revised" License
-code.googlesource.com/google-api-go-client v0.7.0 : BSD 3-clause "New" or "Revised" License
-code.googlesource.com/google-api-go-client v0.8.0 : BSD 3-clause "New" or "Revised" License
-code.googlesource.com/google-api-go-client v0.9.0 : BSD 3-clause "New" or "Revised" License
 com.google.api.grpc:proto-google-common-protos 1.17.0 : Apache License 2.0
 Commons IO 2.6 : Apache License 2.0
 config - com.typesafe:config 1.4.0 : Apache License 2.0
-Consul 1.1.0 : Mozilla Public License 2.0
-content-api-client 7.4 : Apache License 2.0
-contextualized-logging_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81 : Apache License 2.0
-coreos/bbolt v1.3.2 : MIT License
-Daikon main shared library 1.14.0 : Apache License 2.0
-daml-lf-archive-reader_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-daml-lf-archive-reader_2.12 100.13.56-snapshot.20200325.3626.0.a3ddde3a : Apache License 2.0
-daml-lf-blindinginfo-java-proto 1.0.1-snapshot.20200424.3917.0.16093690 : Apache License 2.0
-daml-lf-dev-archive-java-proto 1.0.1-snapshot.20200424.3917.0.16093690 : Apache License 2.0
-daml-lf-dev-archive-java-proto 100.13.55-snapshot.20200309.3401.6f8c3ad8 : Apache License 2.0
-daml-lf-engine_2.12 1.1.1 : Apache License 2.0
-daml-lf-interpreter_2.12 100.13.55-snapshot.20200309.3401.0.6f8c3ad8 : Apache License 2.0
-daml-lf-language_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81 : Apache License 2.0
-daml-lf-scenario-interpreter_2.12 1.1.0-snapshot.20200430.4057.0.681c862d : Apache License 2.0
-daml-lf-transaction-java-proto 0.13.56-snapshot.20200408.3877.0.1ddcd3c0 : Apache License 2.0
-daml-lf-transaction_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-daml-lf-transaction_2.12 100.13.56-snapshot.20200325.3626.0.a3ddde3a : Apache License 2.0
-daml-lf-validation_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-daml-lf-value-java-proto 0.13.56-snapshot.20200408.3871.0.b3ccacc0 : Apache License 2.0
-daml-on-sql_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
+contextualized-logging_2.12 1.2.0 : Apache License 2.0
+contextualized-logging_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+Daikon main shared library 1.16.0 : Apache License 2.0
+daml-lf-archive-reader_2.12 1.2.0 : Apache License 2.0
+daml-lf-archive-reader_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+daml-lf-blindinginfo-java-proto 1.2.0 : Apache License 2.0
+daml-lf-blindinginfo-java-proto 1.2.0-snapshot.20200528.4309.0.f619dea3 : Apache License 2.0
+daml-lf-data_2.12 1.2.0 : Apache License 2.0
+daml-lf-data_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+daml-lf-dev-archive-java-proto 1.2.0 : Apache License 2.0
+daml-lf-dev-archive-java-proto 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+daml-lf-engine_2.12 1.2.0 : Apache License 2.0
+daml-lf-engine_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+daml-lf-interpreter_2.12 1.2.0 : Apache License 2.0
+daml-lf-interpreter_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+daml-lf-language_2.12 1.2.0 : Apache License 2.0
+daml-lf-language_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+daml-lf-scenario-interpreter_2.12 1.2.0 : Apache License 2.0
+daml-lf-scenario-interpreter_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+daml-lf-transaction-java-proto 1.2.0 : Apache License 2.0
+daml-lf-transaction-java-proto 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+daml-lf-transaction_2.12 1.2.0 : Apache License 2.0
+daml-lf-transaction_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+daml-lf-validation_2.12 1.2.0 : Apache License 2.0
+daml-lf-validation_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+daml-lf-value-java-proto 1.2.0 : Apache License 2.0
+daml-lf-value-java-proto 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+daml-on-sql_2.12 1.2.0 : Apache License 2.0
+daml-on-sql_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
 direct-execution-context_2.12 0.13.56-snapshot.20200407.3843.0.10bac143 : Apache License 2.0
-dominikh/go-tools 2019.2.3 : MIT License
-errcheck v1.1.0 : MIT License
+direct-execution-context_2.12 1.2.0 : Apache License 2.0
 error-prone annotations 2.3.3 : Apache License 2.0
 error-prone annotations 2.3.4 : Apache License 2.0
-errwrap v1.0.0 : Mozilla Public License 2.0
-etcdctl v0.3.0 : Apache License 2.0
-fabric-java-sdk 1.4.8 : Apache License 2.0
 fabric-java-sdk 2.1.0 : Apache License 2.0
 fastparse 2.1.3 : MIT License
 fastparse v2.1.1 : MIT License
-fatih-color v1.7.0 : MIT License
 FindBugs jsr305 3.0.2 : Apache License 2.0
 flyway-core 6.2.0 : Apache License 2.0
-fsnotify-fsnotify 20191030-snapshot : BSD 3-clause "New" or "Revised" License
-fsnotify-fsnotify v1.4.7 : BSD 3-clause "New" or "Revised" License
 futures-extra 4.2.0 : Apache License 2.0
-github.com/konsorten/go-windows-terminal-sequences v1.0.1 : MIT License
-github.com/spf13/jwalterweatherman 20190324-snapshot : MIT License
-github.com/spf13/jwalterweatherman v1.0.0 : MIT License
-Go CLI v1.0.0 : Mozilla Public License 2.0
-Go Logrus v1.2.0 : MIT License
 Go programming language 20191114-snapshot : BSD 3-clause "New" or "Revised" License
-Go Testify v1.2.2 : MIT License
-Go Testify v1.3.0 : MIT License
-Go Testify v1.4.0 : Apache License 2.0
-go-errgo-errgo v2.1.0 : BSD 3-clause "New" or "Revised" License
-go-immutable-radix v1.0.0 : Mozilla Public License 2.0
-go-ini-ini 20200219-snapshot : Apache License 2.0
-go-ini-ini v1.51.0 : Apache License 2.0
-go-kit-kit v0.8.0 : MIT License
-go-logfmt-logfmt v0.3.0 : MIT License
-go-logfmt-logfmt v0.4.0 : MIT License
-go-resty/resty v1.12.0 : MIT License
-go-spew 1.1.0 : ISC License
-go-spew v1.1.1 : ISC License
-go-stack-stack v1.8.0 : MIT License
-go-toml 20181212-snapshot : MIT License
-go-toml v1.2.0 : MIT License
-go-viper 20200517-snapshot : MIT License
-go-viper v1.7.0 : MIT License
-go-zap v1.10.0 : BSD 3-clause "New" or "Revised" License
-go.etcd.io/bbolt v1.3.2 : MIT License
-go.googlesource.com/mod v0.1.0 : BSD 3-clause "New" or "Revised" License
-go.uber.org/multierr v1.1.0 : MIT License
-goconvey v1.6.4 : MIT License
-GoDoc Text v0.1.0 : MIT License
-gogo-protobuf v1.1.1 : BSD 3-clause "New" or "Revised" License
-gogo-protobuf v1.2.1 : BSD 3-clause "New" or "Revised" License
-golang protobuf v1.2.0 : BSD 3-clause "New" or "Revised" License
-golang protobuf v1.3.1 : BSD 3-clause "New" or "Revised" License
-golang protobuf v1.3.2 : BSD 3-clause "New" or "Revised" License
-golang-github-ghodss-yaml-dev 1.0.0 : Expat License
-golang-github-hashicorp-memberlist v0.1.3 : Mozilla Public License 2.0
-golang-github-magiconair-properties 20191105-snapshot : BSD 2-clause "Simplified" License
-golang-github-magiconair-properties v1.8.1 : BSD 2-clause "Simplified" License
-golang-github-spf13-pflag-dev 1.0.3 : BSD 3-clause "New" or "Revised" License
-golang-github-spf13-pflag-dev 20200316-snapshot : BSD 3-clause "New" or "Revised" License
-golang-mock 1.3.1 : Apache License 2.0
-golang-mock v1.1.1 : Apache License 2.0
-golang-mock v1.2.0 : Apache License 2.0
-golang.org/x/net 20190517-snapshot-3ec19112 : BSD 3-clause "New" or "Revised" License
-golang.org/x/net 20190617-snapshot : BSD 3-clause "New" or "Revised" License
-golang.org/x/sys 20190918-snapshot : BSD 3-clause "New" or "Revised" License
-golang.org/x/sys 20191023-snapshot : BSD 3-clause "New" or "Revised" License
-golang.org/x/text 20181115-snapshot-2f7c62c6 : BSD 3-clause "New" or "Revised" License
-golang.org/x/text 20200326-snapshot : BSD 3-clause "New" or "Revised" License
-golang/appengine v1.1.0 : Apache License 2.0
-golang/appengine v1.4.0 : Apache License 2.0
-golang/appengine v1.5.0 : Apache License 2.0
-golang/appengine v1.6.1 : Apache License 2.0
 Google Android Annotations Library 4.1.1.4 : Apache License 2.0
 Google API Common 1.8.0 : BSD 3-clause "New" or "Revised" License
 Google API Common 1.8.1 : BSD 3-clause "New" or "Revised" License
 google-gson 2.8.2 : Apache License 2.0
 google-gson 2.8.6 : Apache License 2.0
-google/go-cmp 0.2.0 : BSD 3-clause "New" or "Revised" License
-google/go-cmp v0.3.0 : BSD 3-clause "New" or "Revised" License
-google/go-genproto 20190801-snapshot : Apache License 2.0
-google/renameio v0.1.0 : Apache License 2.0
-googleapis/gax-go v2.0.4 : BSD 3-clause "New" or "Revised" License
-googleapis/gax-go v2.0.5 : BSD 3-clause "New" or "Revised" License
-googleapis/go-genproto 20200521-snapshot : Apache License 2.0
-gorilla/websocket v1.4.2 : BSD 2-clause "Simplified" License
 Graphite Integration for Metrics 4.1.2 : Apache License 2.0
-grpc-ecosystem/go-grpc-middleware v1.0.0 : Apache License 2.0
-grpc-ecosystem/go-grpc-prometheus v1.2.0 : Apache License 2.0
-grpc-gateway v1.9.0 : BSD 3-clause "New" or "Revised" License
-grpc-go v1.19.0 : Apache License 2.0
-grpc-go v1.20.1 : Apache License 2.0
-grpc-go v1.21.1 : Apache License 2.0
-grpc-go v1.22.0 : Apache License 2.0
-grpc-go v1.23.0 : Apache License 2.0
-grpc-utils_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81 : Apache License 2.0
+grpc-utils_2.12 1.2.0 : Apache License 2.0
+grpc-utils_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
 Guava InternalFutureFailureAccess and InternalFutures 1.0.1 : Apache License 2.0
 Guava ListenableFuture only 9999.0-empty-to-avoid-conflict-with-guava : Apache License 2.0
 Guava: Google Core Libraries for Java 23.0 : Apache License 2.0
@@ -181,32 +103,13 @@ Guava: Google Core Libraries for Java 27.1-jre : Apache License 2.0
 Guava: Google Core Libraries for Java 28.2-android : Apache License 2.0
 H2 Database Engine version-1.4.200 : (Mozilla Public License 2.0 OR Eclipse Public License 1.0)
 hadoop-common 2.10.0 : Apache License 2.0
-hashicorp serf v0.8.2 : Mozilla Public License 2.0
-hashicorp-go-cleanhttp v0.5.1 : Mozilla Public License 2.0
-hashicorp-go-msgpack v0.5.3 : BSD 3-clause "New" or "Revised" License
-hashicorp-go-multierror v1.0.0 : Mozilla Public License 2.0
-hashicorp-go-rootcerts v1.0.0 : Mozilla Public License 2.0
-hashicorp-go-syslog v1.0.0 : MIT License
-hashicorp-go-uuid v1.0.0 : Mozilla Public License 2.0
-hashicorp-go-uuid v1.0.1 : Mozilla Public License 2.0
-hashicorp-go.net v0.0.1 : BSD 3-clause "New" or "Revised" License
-hashicorp-golang-lru v0.5.0 : Mozilla Public License 2.0
-hashicorp-golang-lru v0.5.1 : Mozilla Public License 2.0
-hashicorp-logutils v1.0.0 : Mozilla Public License 2.0
-hashicorp-mdns v1.0.0 : MIT License
-hashicorp/go-sockaddr v1.0.0 : Mozilla Public License 2.0
-hashicorp/hcl 20200113-snapshot : Mozilla Public License 2.0
-hashicorp/hcl v1.0.0 : Mozilla Public License 2.0
 HikariCP 3.2.0 : Apache License 2.0
-hyperledger/fabric-chaincode-go 20200129-snapshot-2d899240 : Apache License 2.0
-hyperledger/fabric-protos-go 20200129-snapshot-e9cfc186 : Apache License 2.0
 io.grpc:grpc-api 1.29.0 : Apache License 2.0
 io.grpc:grpc-context 1.27.0 : Apache License 2.0
 io.grpc:grpc-context 1.29.0 : Apache License 2.0
 io.grpc:grpc-core 1.29.0 : Apache License 2.0
 io.grpc:grpc-netty 1.23.0 : Apache License 2.0
 io.grpc:grpc-netty 1.29.0 : Apache License 2.0
-io.grpc:grpc-netty-shaded 1.29.0 : Apache License 2.0
 io.grpc:grpc-protobuf 1.21.0 : Apache License 2.0
 io.grpc:grpc-protobuf 1.23.0 : Apache License 2.0
 io.grpc:grpc-protobuf 1.27.0 : Apache License 2.0
@@ -239,74 +142,65 @@ Joda Time 2.9.7 : Apache License 2.0
 Jodd BeanUtil 5.0.12 : BSD 2-clause "Simplified" License
 Jodd Core 5.0.12 : BSD 2-clause "Simplified" License
 Jodd JSON 5.0.12 : BSD 2-clause "Simplified" License
-jonboulle-clockwork 0.1.0 : Apache License 2.0
-jsoniter-go v1.1.6 : MIT License
 JSR 353 (JSON Processing) API 1.1.3 : (Common Development and Distribution License 1.1 OR Sun GPL With Classpath Exception v2.0)
-julienschmidt/httprouter v1.2.0 : BSD 3-clause "New" or "Revised" License
 JVM Integration for Metrics 4.1.2 : Apache License 2.0
 jwks-rsa 0.8.2 : MIT License
 jwks-rsa 0.8.3 : MIT License
-jwt_2.12 1.1.1 : Apache License 2.0
-jwt_2.12 100.13.51 : Apache License 2.0
+jwt_2.12 1.2.0 : Apache License 2.0
+jwt_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
 kafka-connect-common 2.0.0 : Apache License 2.0
-kisielk-gotool v1.0.0 : (MIT License AND BSD 3-clause "New" or "Revised" License)
-kr/pretty 0.1.0 : MIT License
-ledger-api-akka_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-ledger-api-auth-client 0.13.56-snapshot.20200408.3877.0.1ddcd3c0 : Apache License 2.0
-ledger-api-auth_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81 : Apache License 2.0
-ledger-api-client_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81 : Apache License 2.0
-ledger-api-common_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-ledger-api-domain_2.12 1.1.1 : Apache License 2.0
-ledger-api-health_2.12 0.13.56-snapshot.20200407.3843.0.10bac143 : Apache License 2.0
-ledger-api-scalapb_2.12 1.1.1 : Apache License 2.0
-ledger-api-server_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-ledger-api-test-tool 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-ledger-api-test-tool 100.13.51 : Apache License 2.0
+ledger-api-akka_2.12 1.2.0 : Apache License 2.0
+ledger-api-akka_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+ledger-api-auth-client 1.2.0 : Apache License 2.0
+ledger-api-auth-client 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+ledger-api-auth_2.12 1.2.0 : Apache License 2.0
+ledger-api-auth_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+ledger-api-client_2.12 1.2.0 : Apache License 2.0
+ledger-api-client_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+ledger-api-common_2.12 1.2.0 : Apache License 2.0
+ledger-api-common_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+ledger-api-domain_2.12 1.2.0 : Apache License 2.0
+ledger-api-domain_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+ledger-api-health_2.12 1.2.0 : Apache License 2.0
+ledger-api-health_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+ledger-api-scalapb_2.12 1.2.0 : Apache License 2.0
+ledger-api-scalapb_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+ledger-api-server_2.12 1.2.0-snapshot.20200528.4309.0.f619dea3 : Apache License 2.0
+ledger-api-test-tool 1.2.0-snapshot.20200528.4309.0.f619dea3 : Apache License 2.0
 lenses 0.9.0 : Apache License 2.0
 Logback 1.2.3 : (GNU Lesser General Public License v2.1 or later AND Eclipse Public License 1.0)
 Logback Classic Module 1.2.3 : (GNU Lesser General Public License v2.1 or later OR Eclipse Public License 1.0)
 logstash-logback-encoder logstash-logback-encoder-6.3 : Apache License 2.0
-mapstructure 20190613-snapshot : MIT License
-mapstructure v1.1.2 : MIT License
-mattn-go-colorable v0.0.9 : MIT License
-mattn-go-isatty v0.0.3 : MIT License
-matttproud-golang_protobuf_extensions v1.0.1 : Apache License 2.0
 Metrics Core 4.1.2 : Apache License 2.0
 Metrics Integration with JMX 4.1.2 : Apache License 2.0
-miekg/dns v1.0.14 : BSD 3-clause "New" or "Revised" License
+metrics_2.12 1.2.0 : Apache License 2.0
+metrics_2.12 1.2.0-snapshot.20200528.4309.0.f619dea3 : Apache License 2.0
 milagro-crypto-java 0.4.0 : Apache License 2.0
-mitchellh-go-homedir v1.0.0 : MIT License
-mitchellh-iochan v1.0.0 : MIT License
-mitchellh/go-testing-interface v1.0.0 : MIT License
-mitchellh/gox v0.4.0 : Mozilla Public License 2.0
-modern-go/reflect2 1.0.1 : Apache License 2.0
 Netty Project 4.1.48.Final : Apache License 2.0
 Netty Project netty-4.1.41.Final : Apache License 2.0
 Netty/TomcatNative [BoringSSL - Static] 2.0.26.Final : Apache License 2.0
 Netty/TomcatNative [BoringSSL - Static] 2.0.29.Final : Apache License 2.0
 Netty/TomcatNative [BoringSSL - Static] 2.0.30.Final : Apache License 2.0
-Netty/TomcatNative [OpenSSL - Dynamic] 2.0.25.Final : Apache License 2.0
-oklog/ulid v1.3.1 : Apache License 2.0
-OneOfOne/xxhash v1.2.2 : Apache License 2.0
-op/go-logging 20180919-snapshot : BSD 3-clause "New" or "Revised" License
 p6spy 3.8.7 : Apache License 2.0
 paiges-core 0.2.1 : Apache License 2.0
-participant-state-index_2.12 100.13.56-snapshot.20200325.3626.0.a3ddde3a : Apache License 2.0
-participant-state-kvutils-java-proto 1.1.1 : Apache License 2.0
-participant-state-kvutils_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-participant-state-ledger-configuration-java-proto 100.13.56-snapshot.20200331.3729.0.b43b8d86 : Apache License 2.0
-participant-state-metrics_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-participant-state_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
+participant-state-index_2.12 1.2.0 : Apache License 2.0
+participant-state-index_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+participant-state-kvutils-app_2.12 1.2.0 : Apache License 2.0
+participant-state-kvutils-app_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+participant-state-kvutils-java-proto 1.2.0 : Apache License 2.0
+participant-state-kvutils-java-proto 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+participant-state-kvutils_2.12 1.2.0 : Apache License 2.0
+participant-state-kvutils_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+participant-state-ledger-configuration-java-proto 1.1.1 : Apache License 2.0
+participant-state-ledger-configuration-java-proto 1.2.0 : Apache License 2.0
+participant-state-metrics_2.12 1.2.0 : Apache License 2.0
+participant-state-metrics_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+participant-state_2.12 1.2.0 : Apache License 2.0
+participant-state_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
 perfmark:perfmark-api 0.19.0 : Apache License 2.0
-pkg/errors v0.8.0 : BSD 2-clause "Simplified" License
-pkg/errors v0.8.1 : BSD 2-clause "Simplified" License
-pmezard-go-difflib 1.0.0 : BSD 3-clause "New" or "Revised" License
-ports_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-posener/complete v1.1.1 : MIT License
+ports_2.12 1.2.0 : Apache License 2.0
+ports_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
 PostgreSQL JDBC Driver (pgjdbc) REL42.2.9 : BSD 2-clause "Simplified" License
-processors 5.3 : Apache License 2.0
-prometheus-common v0.4.0 : Apache License 2.0
-prometheus/tsdb v0.7.1 : Apache License 2.0
 Protocol Buffer Java API 3.10.0 : BSD 3-clause "New" or "Revised" License
 Protocol Buffer Java API 3.11.0 : BSD 3-clause "New" or "Revised" License
 Protocol Buffer Java API 3.7.1 : BSD 3-clause "New" or "Revised" License
@@ -314,20 +208,20 @@ Protocol Buffer Java Util Package 3.10.0 : BSD 3-clause "New" or "Revised" Licen
 Protocol Buffer Java Util Package 3.11.0 : BSD 3-clause "New" or "Revised" License
 Protocol Buffer Java Util Package 3.11.3 : BSD 3-clause "New" or "Revised" License
 Protocol Buffer Java Util Package 3.7.1 : BSD 3-clause "New" or "Revised" License
-pty v1.1.1 : MIT License
 RabbitMQ amqp-client 5.5.3 : Apache License 2.0
 reactive-streams 1.0.0 : Creative Commons Zero v1.0 Universal
 reactive-streams 1.0.2 : Creative Commons Zero v1.0 Universal
 reactive-streams v1.0.3 : Creative Commons Zero v1.0 Universal
-resources-akka_2.12 1.1.0-snapshot.20200422.3991.0.6391ee9f : Apache License 2.0
-resources_2.12 1.1.1 : Apache License 2.0
-rogpeppe/go-internal v1.3.0 : BSD 3-clause "New" or "Revised" License
-rs-grpc-akka_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-rs-grpc-bridge 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
-rsc/binaryregexp v0.2.0 : BSD 3-clause "New" or "Revised" License
-sandbox_2.12 1.0.1-snapshot.20200424.3917.0.16093690 : Apache License 2.0
-sandbox_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81 : Apache License 2.0
-sandbox_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3 : Apache License 2.0
+resources-akka_2.12 1.2.0 : Apache License 2.0
+resources-akka_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+resources_2.12 1.2.0 : Apache License 2.0
+resources_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0 : Apache License 2.0
+rs-grpc-akka_2.12 1.2.0 : Apache License 2.0
+rs-grpc-akka_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+rs-grpc-bridge 1.2.0 : Apache License 2.0
+rs-grpc-bridge 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
+sandbox_2.12 1.2.0 : Apache License 2.0
+sandbox_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
 scaffeine 3.1.0 : Apache License 2.0
 Scala 2.12.11 : Apache License 2.0
 scala-arm 2.0 : BSD 3-clause "New" or "Revised" License
@@ -339,7 +233,6 @@ scala-parser-combinators 1.0.4 : BSD 3-clause "New" or "Revised" License
 scala-parser-combinators 1.1.2 : Apache License 2.0
 scala-xml 1.0.6 : BSD 3-clause "New" or "Revised" License
 scala-xml 1.2.0 : Apache License 2.0
-scalac-profiling 0.0.3 : Apache License 2.0
 scalactic 3.0.5 : Apache License 2.0
 scalactic 3.1.0 : Apache License 2.0
 scalapb-runtime 0.9.0 : Apache License 2.0
@@ -357,34 +250,24 @@ SLF4J API Module 1.7.26 : MIT License
 SLF4J API Module 1.7.29 : MIT License
 SnakeYAML 1.26 : Apache License 2.0
 SnakeYAML snakeyaml-1.25 : Apache License 2.0
-soheilhy/cmux v0.1.4 : Apache License 2.0
 sourcecode 0.1.6 : MIT License
 sourcecode 0.1.7 : MIT License
-spf13-afero v1.1.2 : Apache License 2.0
-spf13-cast 20200408-snapshot : MIT License
-spf13-cast v1.3.0 : MIT License
 spray JSON v1.3.5 : Apache License 2.0
 ssl-config-core 0.4.1 : Apache License 2.0
-stretchr/objx v0.1.0 : MIT License
-stretchr/objx v0.1.1 : MIT License
-subosito/gotenv 20200215-snapshot : MIT License
-subosito/gotenv v1.2.0 : MIT License
-timer-utils_2.12 1.1.1 : Apache License 2.0
-uber-go/atomic v1.4.0 : Apache License 2.0
+testing-utils_2.12 1.2.0 : Apache License 2.0
+timer-utils_2.12 1.2.0 : Apache License 2.0
+timer-utils_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f : Apache License 2.0
 Xerial SQLite JDBC 3.30.1 : Apache License 2.0
-yaml for Go 20200129-snapshot : Apache License 2.0
-yaml for Go v2.2.1 : Apache License 2.0
-yaml for Go v2.2.2 : (MIT License AND Apache License 2.0)
-yaml for Go v2.2.4 : Apache License 2.0
+Zeebe Samples 0.24.0-alpha2 : Apache License 2.0
 Zipkin 1.31.0 : Apache License 2.0
 Zipkin 1.31.3 : Apache License 2.0
 Zipkin Reporter: Core 1.0.2 : Apache License 2.0
 Zipkin Reporter: Core 1.0.4 : Apache License 2.0
 
-Licenses:
+Licenses: 
 
 Apache License 2.0
-(akka-actor 2.6.1, akka-protobuf-v3 2.6.0-RC2, akka-protobuf-v3 2.6.1, akka-slf4j 2.6.1, akka-slf4j 2.6.2, akka-stream 2.6.1, akka-stream-testkit 2.6.1, akka-testkit 2.6.1, anorm 2.5.3, anorm-tokenizer 2.5.3, Apache Commons CLI 1.4, Apache Commons Codec 1.11, Apache Commons Codec 1.13, Apache Commons Codec 1.14, Apache Commons Compress 1.18, Apache Commons Compress 1.19, Apache Commons Logging 1.2, Apache Commons Math 3.6.1, Apache Extras Companion for log4j 1.2. 1.2.17, Apache HttpClient 4.5.10, Apache HttpComponents Core 4.4.12, Apache log4j 1.2.17, bgentry-speakeasy 0.1.0, bindings-scala_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, brave 4.6.0, btree v1.0.0, build-info_2.12 1.1.0-snapshot.20200422.3991.0.6391ee9f, Caffeine cache 2.8.0, census-instrumentation/opencensus-go 0.22.0, census-instrumentation/opencensus-go v0.21.0, client_golang v0.9.1, client_golang v0.9.3, com.google.api.grpc:proto-google-common-protos 1.17.0, Commons IO 2.6, config - com.typesafe:config 1.4.0, content-api-client 7.4, contextualized-logging_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81, Daikon main shared library 1.14.0, daml-lf-archive-reader_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, daml-lf-archive-reader_2.12 100.13.56-snapshot.20200325.3626.0.a3ddde3a, daml-lf-blindinginfo-java-proto 1.0.1-snapshot.20200424.3917.0.16093690, daml-lf-dev-archive-java-proto 1.0.1-snapshot.20200424.3917.0.16093690, daml-lf-dev-archive-java-proto 100.13.55-snapshot.20200309.3401.6f8c3ad8, daml-lf-engine_2.12 1.1.1, daml-lf-interpreter_2.12 100.13.55-snapshot.20200309.3401.0.6f8c3ad8, daml-lf-language_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81, daml-lf-scenario-interpreter_2.12 1.1.0-snapshot.20200430.4057.0.681c862d, daml-lf-transaction-java-proto 0.13.56-snapshot.20200408.3877.0.1ddcd3c0, daml-lf-transaction_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, daml-lf-transaction_2.12 100.13.56-snapshot.20200325.3626.0.a3ddde3a, daml-lf-validation_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, daml-lf-value-java-proto 0.13.56-snapshot.20200408.3871.0.b3ccacc0, daml-on-sql_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, direct-execution-context_2.12 0.13.56-snapshot.20200407.3843.0.10bac143, error-prone annotations 2.3.3, error-prone annotations 2.3.4, etcdctl v0.3.0, fabric-java-sdk 1.4.8, fabric-java-sdk 2.1.0, FindBugs jsr305 3.0.2, flyway-core 6.2.0, futures-extra 4.2.0, Go Testify v1.4.0, go-ini-ini 20200219-snapshot, go-ini-ini v1.51.0, golang-mock 1.3.1, golang-mock v1.1.1, golang-mock v1.2.0, golang/appengine v1.1.0, golang/appengine v1.4.0, golang/appengine v1.5.0, golang/appengine v1.6.1, Google Android Annotations Library 4.1.1.4, google-gson 2.8.2, google-gson 2.8.6, google/go-genproto 20190801-snapshot, google/renameio v0.1.0, googleapis/go-genproto 20200521-snapshot, Graphite Integration for Metrics 4.1.2, grpc-ecosystem/go-grpc-middleware v1.0.0, grpc-ecosystem/go-grpc-prometheus v1.2.0, grpc-go v1.19.0, grpc-go v1.20.1, grpc-go v1.21.1, grpc-go v1.22.0, grpc-go v1.23.0, grpc-utils_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81, Guava InternalFutureFailureAccess and InternalFutures 1.0.1, Guava ListenableFuture only 9999.0-empty-to-avoid-conflict-with-guava, Guava: Google Core Libraries for Java 23.0, Guava: Google Core Libraries for Java 24.0-jre, Guava: Google Core Libraries for Java 26.0-android, Guava: Google Core Libraries for Java 27.1-jre, Guava: Google Core Libraries for Java 28.2-android, hadoop-common 2.10.0, HikariCP 3.2.0, hyperledger/fabric-chaincode-go 20200129-snapshot-2d899240, hyperledger/fabric-protos-go 20200129-snapshot-e9cfc186, io.grpc:grpc-api 1.29.0, io.grpc:grpc-context 1.27.0, io.grpc:grpc-context 1.29.0, io.grpc:grpc-core 1.29.0, io.grpc:grpc-netty 1.23.0, io.grpc:grpc-netty 1.29.0, io.grpc:grpc-netty-shaded 1.29.0, io.grpc:grpc-protobuf 1.21.0, io.grpc:grpc-protobuf 1.23.0, io.grpc:grpc-protobuf 1.27.0, io.grpc:grpc-protobuf 1.29.0, io.grpc:grpc-protobuf-lite 1.28.0, io.grpc:grpc-protobuf-lite 1.29.0, io.grpc:grpc-services 1.29.0, io.grpc:grpc-stub 1.21.0, io.grpc:grpc-stub 1.23.0, io.grpc:grpc-stub 1.29.0, J2ObjC Annotations 1.3, jackson-annotations 2.10.3, jackson-annotations jackson-annotations-2.10.1, jackson-annotations jackson-annotations-2.11.0, jackson-core 2.10.1, jackson-core 2.10.3, jackson-core 2.11.0, jackson-databind 2.10.1, jackson-databind 2.10.3, jackson-databind 2.11.0, jackson-dataformat-yaml 2.11.0, jansi 1.12, Java OpenTelemetry Bridge 0.4.0, Joda Convert 1.8.1, Joda Time 2.9.7, jonboulle-clockwork 0.1.0, JVM Integration for Metrics 4.1.2, jwt_2.12 1.1.1, jwt_2.12 100.13.51, kafka-connect-common 2.0.0, ledger-api-akka_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, ledger-api-auth-client 0.13.56-snapshot.20200408.3877.0.1ddcd3c0, ledger-api-auth_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81, ledger-api-client_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81, ledger-api-common_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, ledger-api-domain_2.12 1.1.1, ledger-api-health_2.12 0.13.56-snapshot.20200407.3843.0.10bac143, ledger-api-scalapb_2.12 1.1.1, ledger-api-server_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, ledger-api-test-tool 1.2.0-snapshot.20200513.4172.0.021f4af3, ledger-api-test-tool 100.13.51, lenses 0.9.0, logstash-logback-encoder logstash-logback-encoder-6.3, matttproud-golang_protobuf_extensions v1.0.1, Metrics Core 4.1.2, Metrics Integration with JMX 4.1.2, milagro-crypto-java 0.4.0, modern-go/reflect2 1.0.1, Netty Project 4.1.48.Final, Netty Project netty-4.1.41.Final, Netty/TomcatNative [BoringSSL - Static] 2.0.26.Final, Netty/TomcatNative [BoringSSL - Static] 2.0.29.Final, Netty/TomcatNative [BoringSSL - Static] 2.0.30.Final, Netty/TomcatNative [OpenSSL - Dynamic] 2.0.25.Final, oklog/ulid v1.3.1, OneOfOne/xxhash v1.2.2, p6spy 3.8.7, paiges-core 0.2.1, participant-state-index_2.12 100.13.56-snapshot.20200325.3626.0.a3ddde3a, participant-state-kvutils-java-proto 1.1.1, participant-state-kvutils_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, participant-state-ledger-configuration-java-proto 100.13.56-snapshot.20200331.3729.0.b43b8d86, participant-state-metrics_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, participant-state_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, perfmark:perfmark-api 0.19.0, ports_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, processors 5.3, prometheus-common v0.4.0, prometheus/tsdb v0.7.1, RabbitMQ amqp-client 5.5.3, resources-akka_2.12 1.1.0-snapshot.20200422.3991.0.6391ee9f, resources_2.12 1.1.1, rs-grpc-akka_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, rs-grpc-bridge 1.2.0-snapshot.20200513.4172.0.021f4af3, sandbox_2.12 1.0.1-snapshot.20200424.3917.0.16093690, sandbox_2.12 1.1.0-snapshot.20200506.4107.0.7e448d81, sandbox_2.12 1.2.0-snapshot.20200513.4172.0.021f4af3, scaffeine 3.1.0, Scala 2.12.11, scala-compiler 2.12.11, scala-logging 3.9.2, scala-parser-combinators 1.1.2, scala-xml 1.2.0, scalac-profiling 0.0.3, scalactic 3.0.5, scalactic 3.1.0, scalapb-runtime 0.9.0, scalapb-runtime-grpc 0.9.0, scalatest 3.0.5, scalatest 3.1.0, scalatest-compatible 3.1.0, Silencer 1.4.4, Silencer 1.6.0, SnakeYAML 1.26, SnakeYAML snakeyaml-1.25, soheilhy/cmux v0.1.4, spf13-afero v1.1.2, spray JSON v1.3.5, ssl-config-core 0.4.1, timer-utils_2.12 1.1.1, uber-go/atomic v1.4.0, Xerial SQLite JDBC 3.30.1, yaml for Go 20200129-snapshot, yaml for Go v2.2.1, yaml for Go v2.2.2, yaml for Go v2.2.4, Zipkin 1.31.0, Zipkin 1.31.3, Zipkin Reporter: Core 1.0.2, Zipkin Reporter: Core 1.0.4)
+(akka-actor 2.6.1, akka-protobuf-v3 2.6.1, akka-slf4j 2.6.1, akka-slf4j 2.6.2, akka-stream 2.6.1, akka-stream-testkit 2.6.1, akka-testkit 2.6.1, anorm 2.5.3, anorm-tokenizer 2.5.3, Apache Commons CLI 1.4, Apache Commons Codec 1.11, Apache Commons Codec 1.13, Apache Commons Codec 1.14, Apache Commons Compress 1.18, Apache Commons Compress 1.19, Apache Commons Logging 1.2, Apache Commons Math 3.6.1, Apache Extras Companion for log4j 1.2. 1.2.17, Apache HttpClient 4.5.10, Apache HttpComponents Core 4.4.12, Apache log4j 1.2.17, bindings-scala_2.12 1.2.0, bindings-scala_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, brave 4.6.0, build-info_2.12 1.0.0, build-info_2.12 1.2.0, caching_2.12 1.2.0, caching_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, Caffeine cache 2.8.0, com.google.api.grpc:proto-google-common-protos 1.17.0, Commons IO 2.6, config - com.typesafe:config 1.4.0, contextualized-logging_2.12 1.2.0, contextualized-logging_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, Daikon main shared library 1.16.0, daml-lf-archive-reader_2.12 1.2.0, daml-lf-archive-reader_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, daml-lf-blindinginfo-java-proto 1.2.0, daml-lf-blindinginfo-java-proto 1.2.0-snapshot.20200528.4309.0.f619dea3, daml-lf-data_2.12 1.2.0, daml-lf-data_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, daml-lf-dev-archive-java-proto 1.2.0, daml-lf-dev-archive-java-proto 1.3.0-snapshot.20200603.4345.0.1386abc0, daml-lf-engine_2.12 1.2.0, daml-lf-engine_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, daml-lf-interpreter_2.12 1.2.0, daml-lf-interpreter_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, daml-lf-language_2.12 1.2.0, daml-lf-language_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, daml-lf-scenario-interpreter_2.12 1.2.0, daml-lf-scenario-interpreter_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, daml-lf-transaction-java-proto 1.2.0, daml-lf-transaction-java-proto 1.3.0-snapshot.20200603.4345.0.1386abc0, daml-lf-transaction_2.12 1.2.0, daml-lf-transaction_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, daml-lf-validation_2.12 1.2.0, daml-lf-validation_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, daml-lf-value-java-proto 1.2.0, daml-lf-value-java-proto 1.3.0-snapshot.20200603.4345.0.1386abc0, daml-on-sql_2.12 1.2.0, daml-on-sql_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, direct-execution-context_2.12 0.13.56-snapshot.20200407.3843.0.10bac143, direct-execution-context_2.12 1.2.0, error-prone annotations 2.3.3, error-prone annotations 2.3.4, fabric-java-sdk 2.1.0, FindBugs jsr305 3.0.2, flyway-core 6.2.0, futures-extra 4.2.0, Google Android Annotations Library 4.1.1.4, google-gson 2.8.2, google-gson 2.8.6, Graphite Integration for Metrics 4.1.2, grpc-utils_2.12 1.2.0, grpc-utils_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, Guava InternalFutureFailureAccess and InternalFutures 1.0.1, Guava ListenableFuture only 9999.0-empty-to-avoid-conflict-with-guava, Guava: Google Core Libraries for Java 23.0, Guava: Google Core Libraries for Java 24.0-jre, Guava: Google Core Libraries for Java 26.0-android, Guava: Google Core Libraries for Java 27.1-jre, Guava: Google Core Libraries for Java 28.2-android, hadoop-common 2.10.0, HikariCP 3.2.0, io.grpc:grpc-api 1.29.0, io.grpc:grpc-context 1.27.0, io.grpc:grpc-context 1.29.0, io.grpc:grpc-core 1.29.0, io.grpc:grpc-netty 1.23.0, io.grpc:grpc-netty 1.29.0, io.grpc:grpc-protobuf 1.21.0, io.grpc:grpc-protobuf 1.23.0, io.grpc:grpc-protobuf 1.27.0, io.grpc:grpc-protobuf 1.29.0, io.grpc:grpc-protobuf-lite 1.28.0, io.grpc:grpc-protobuf-lite 1.29.0, io.grpc:grpc-services 1.29.0, io.grpc:grpc-stub 1.21.0, io.grpc:grpc-stub 1.23.0, io.grpc:grpc-stub 1.29.0, J2ObjC Annotations 1.3, jackson-annotations 2.10.3, jackson-annotations jackson-annotations-2.10.1, jackson-annotations jackson-annotations-2.11.0, jackson-core 2.10.1, jackson-core 2.10.3, jackson-core 2.11.0, jackson-databind 2.10.1, jackson-databind 2.10.3, jackson-databind 2.11.0, jackson-dataformat-yaml 2.11.0, jansi 1.12, Java OpenTelemetry Bridge 0.4.0, Joda Convert 1.8.1, Joda Time 2.9.7, JVM Integration for Metrics 4.1.2, jwt_2.12 1.2.0, jwt_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, kafka-connect-common 2.0.0, ledger-api-akka_2.12 1.2.0, ledger-api-akka_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, ledger-api-auth-client 1.2.0, ledger-api-auth-client 1.3.0-snapshot.20200603.4345.0.1386abc0, ledger-api-auth_2.12 1.2.0, ledger-api-auth_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, ledger-api-client_2.12 1.2.0, ledger-api-client_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, ledger-api-common_2.12 1.2.0, ledger-api-common_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, ledger-api-domain_2.12 1.2.0, ledger-api-domain_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, ledger-api-health_2.12 1.2.0, ledger-api-health_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, ledger-api-scalapb_2.12 1.2.0, ledger-api-scalapb_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, ledger-api-server_2.12 1.2.0-snapshot.20200528.4309.0.f619dea3, ledger-api-test-tool 1.2.0-snapshot.20200528.4309.0.f619dea3, lenses 0.9.0, logstash-logback-encoder logstash-logback-encoder-6.3, Metrics Core 4.1.2, Metrics Integration with JMX 4.1.2, metrics_2.12 1.2.0, metrics_2.12 1.2.0-snapshot.20200528.4309.0.f619dea3, milagro-crypto-java 0.4.0, Netty Project 4.1.48.Final, Netty Project netty-4.1.41.Final, Netty/TomcatNative [BoringSSL - Static] 2.0.26.Final, Netty/TomcatNative [BoringSSL - Static] 2.0.29.Final, Netty/TomcatNative [BoringSSL - Static] 2.0.30.Final, p6spy 3.8.7, paiges-core 0.2.1, participant-state-index_2.12 1.2.0, participant-state-index_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, participant-state-kvutils-app_2.12 1.2.0, participant-state-kvutils-app_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, participant-state-kvutils-java-proto 1.2.0, participant-state-kvutils-java-proto 1.2.0-snapshot.20200602.4310.0.1c18058f, participant-state-kvutils_2.12 1.2.0, participant-state-kvutils_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, participant-state-ledger-configuration-java-proto 1.1.1, participant-state-ledger-configuration-java-proto 1.2.0, participant-state-metrics_2.12 1.2.0, participant-state-metrics_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, participant-state_2.12 1.2.0, participant-state_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, perfmark:perfmark-api 0.19.0, ports_2.12 1.2.0, ports_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, RabbitMQ amqp-client 5.5.3, resources-akka_2.12 1.2.0, resources-akka_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, resources_2.12 1.2.0, resources_2.12 1.3.0-snapshot.20200603.4345.0.1386abc0, rs-grpc-akka_2.12 1.2.0, rs-grpc-akka_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, rs-grpc-bridge 1.2.0, rs-grpc-bridge 1.2.0-snapshot.20200602.4310.0.1c18058f, sandbox_2.12 1.2.0, sandbox_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, scaffeine 3.1.0, Scala 2.12.11, scala-compiler 2.12.11, scala-logging 3.9.2, scala-parser-combinators 1.1.2, scala-xml 1.2.0, scalactic 3.0.5, scalactic 3.1.0, scalapb-runtime 0.9.0, scalapb-runtime-grpc 0.9.0, scalatest 3.0.5, scalatest 3.1.0, scalatest-compatible 3.1.0, Silencer 1.4.4, Silencer 1.6.0, SnakeYAML 1.26, SnakeYAML snakeyaml-1.25, spray JSON v1.3.5, ssl-config-core 0.4.1, testing-utils_2.12 1.2.0, timer-utils_2.12 1.2.0, timer-utils_2.12 1.2.0-snapshot.20200602.4310.0.1c18058f, Xerial SQLite JDBC 3.30.1, Zeebe Samples 0.24.0-alpha2, Zipkin 1.31.0, Zipkin 1.31.3, Zipkin Reporter: Core 1.0.2, Zipkin Reporter: Core 1.0.4)
 
 Apache License
 Version 2.0, January 2004
@@ -571,7 +454,7 @@ third-party archives.
 ---
 
 BSD 2-clause "Simplified" License
-(golang-github-magiconair-properties 20191105-snapshot, gorilla/websocket v1.4.2, Jodd BeanUtil 5.0.12, Jodd Core 5.0.12, Jodd JSON 5.0.12, PostgreSQL JDBC Driver (pgjdbc) REL42.2.9)
+(Jodd BeanUtil 5.0.12, Jodd Core 5.0.12, Jodd JSON 5.0.12)
 
 BSD Two Clause License
 ======================
@@ -600,60 +483,31 @@ DAMAGE.
 ---
 
 BSD 2-clause "Simplified" License
-(golang-github-magiconair-properties v1.8.1)
+(PostgreSQL JDBC Driver (pgjdbc) REL42.2.9)
 
-Copyright (c) 2013-2018 - Frank Schroeder
-
+Copyright (c) 1997, PostgreSQL Global Development Group
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
 2. Redistributions in binary form must reproduce the above copyright notice,
    this list of conditions and the following disclaimer in the documentation
    and/or other materials provided with the distribution.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
-ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 2-clause "Simplified" License
-(pkg/errors v0.8.0, pkg/errors v0.8.1)
-
-Copyright (c) 2015, Dave Cheney <dave@cheney.net>
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
-
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE
 
 ---
 
@@ -692,74 +546,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
 ---
 
 BSD 3-clause "New" or "Revised" License
-(kisielk-gotool v1.0.0)
-
-Copyright (c) 2009 The Go Authors. All rights reserved.
-
-
-
-Redistribution and use in source and binary forms, with or without
-    modification, are permitted provided that the following conditions are
-    met:
-
-       * Redistributions of source code must retain the above copyright
-    notice, this list of conditions and the following disclaimer.
-       * Redistributions in binary form must reproduce the above
-    copyright notice, this list of conditions and the following disclaimer
-    in the documentation and/or other materials provided with the
-    distribution.
-       * Neither the name of Google Inc. nor the names of its
-    contributors may be used to endorse or promote products derived from
-    this software without specific prior written permission.
-
-    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-    "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-    A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-    OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-    LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-    DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-    THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(golang.org/x/net 20190517-snapshot-3ec19112, golang.org/x/net 20190617-snapshot, golang.org/x/sys 20190918-snapshot, hashicorp-go.net v0.0.1, miekg/dns v1.0.14)
-
-Copyright (c) 2009 The Go Authors. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
 (scalaz-core 7.2.24)
 
 Copyright (c) 2009-2018 Tony Morris, Runar Bjarnason, Tom Adams, Kristian Domagala, Brad Clow, Ricky Clarkson, Paul Chiusano, Trygve Laugstøl, Nick Partridge, Jason Zaugg
@@ -791,300 +577,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
 ---
 
 BSD 3-clause "New" or "Revised" License
-(code.googlesource.com/google-api-go-client v0.4.0, code.googlesource.com/google-api-go-client v0.7.0, code.googlesource.com/google-api-go-client v0.8.0, code.googlesource.com/google-api-go-client v0.9.0)
-
-Copyright (c) 2011 Google Inc. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(golang-github-spf13-pflag-dev 1.0.3)
-
-Copyright (c) 2012 Alex Ogier. All rights reserved.
-Copyright (c) 2012 The Go Authors. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(fsnotify-fsnotify v1.4.7)
-
-Copyright (c) 2012 The Go Authors. All rights reserved.
-Copyright (c) 2012 fsnotify Authors. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(hashicorp-go-msgpack v0.5.3)
-
-Copyright (c) 2012, 2013 Ugorji Nwoke.
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification,
-are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice,
-  this list of conditions and the following disclaimer.
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
-* Neither the name of the author nor the names of its contributors may be used
-  to endorse or promote products derived from this software
-  without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
-ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(julienschmidt/httprouter v1.2.0)
-
-Copyright (c) 2013 Julien Schmidt. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-    * Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-    * The names of the contributors may not be used to endorse or promote
-      products derived from this software without specific prior written
-      permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL JULIEN SCHMIDT BE LIABLE FOR ANY
-DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(op/go-logging 20180919-snapshot)
-
-Copyright (c) 2013 Örjan Persson. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(grpc-gateway v1.9.0)
-
-Copyright (c) 2015, Gengo, Inc.
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification,
-are permitted provided that the following conditions are met:
-
-    * Redistributions of source code must retain the above copyright notice,
-      this list of conditions and the following disclaimer.
-
-    * Redistributions in binary form must reproduce the above copyright notice,
-      this list of conditions and the following disclaimer in the documentation
-      and/or other materials provided with the distribution.
-
-    * Neither the name of Gengo, Inc. nor the names of its
-      contributors may be used to endorse or promote products derived from this
-      software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
-ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(google/go-cmp 0.2.0)
-
-Copyright (c) 2017 The Go Authors. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(rogpeppe/go-internal v1.3.0)
-
-Copyright (c) 2018 The Go Authors. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(code.googlesource.com/google-api-go-client v0.13.0, fsnotify-fsnotify 20191030-snapshot, Go programming language 20191114-snapshot, go-zap v1.10.0, go.googlesource.com/mod v0.1.0, golang-github-spf13-pflag-dev 20200316-snapshot, golang.org/x/sys 20191023-snapshot, golang.org/x/text 20181115-snapshot-2f7c62c6, golang.org/x/text 20200326-snapshot, Google API Common 1.8.0, Google API Common 1.8.1, Protocol Buffer Java API 3.10.0, Protocol Buffer Java API 3.11.0, Protocol Buffer Java API 3.7.1, Protocol Buffer Java Util Package 3.10.0, Protocol Buffer Java Util Package 3.11.0, Protocol Buffer Java Util Package 3.11.3, Protocol Buffer Java Util Package 3.7.1, rsc/binaryregexp v0.2.0, scala-arm 2.0, scala-java8-compat 0.8.0, scala-java8-compat 0.9.0, scala-xml 1.0.6)
+(Go programming language 20191114-snapshot, Google API Common 1.8.0, Google API Common 1.8.1, Protocol Buffer Java API 3.10.0, Protocol Buffer Java API 3.11.0, Protocol Buffer Java API 3.7.1, Protocol Buffer Java Util Package 3.10.0, Protocol Buffer Java Util Package 3.11.0, Protocol Buffer Java Util Package 3.11.3, Protocol Buffer Java Util Package 3.7.1, scala-arm 2.0, scala-java8-compat 0.8.0, scala-java8-compat 0.9.0, scala-xml 1.0.6)
 
 Copyright (c) <YEAR>, <OWNER>
 All rights reserved.
@@ -1114,182 +607,6 @@ OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
 THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
----
-
-BSD 3-clause "New" or "Revised" License
-(golang protobuf v1.2.0, golang protobuf v1.3.1, golang protobuf v1.3.2)
-
-Copyright 2010 The Go Authors.  All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-    * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-    * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(gogo-protobuf v1.1.1, gogo-protobuf v1.2.1)
-
-Copyright 2010 The Go Authors.  All rights reserved.
-https://github.com/golang/protobuf
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-    * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-    * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(googleapis/gax-go v2.0.4, googleapis/gax-go v2.0.5)
-
-Copyright 2016, Google Inc.
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(go-errgo-errgo v2.1.0)
-
-Copyright © 2013, Roger Peppe
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification,
-are permitted provided that the following conditions are met:
-
-    * Redistributions of source code must retain the above copyright notice,
-      this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above copyright notice,
-      this list of conditions and the following disclaimer in the documentation
-      and/or other materials provided with the distribution.
-    * Neither the name of this project nor the names of its contributors
-      may be used to endorse or promote products derived from this software
-      without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
-TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(google/go-cmp v0.3.0)
-
-Source: https://github.com/google/go-cmp
-
-Files: *
-Copyright: 2017 Google
-License: BSD-3-clause
-
-Files: debian/*
-Copyright: 2017 Martín Ferrari <tincho@debian.org>
-License: BSD-3-clause
-
-License: BSD-3-clause
-
-Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are
- met:
- .
-    * Redistributions of source code must retain the above copyright
- notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above
- copyright notice, this list of conditions and the following disclaimer
- in the documentation and/or other materials provided with the
- distribution.
-    * Neither the name of Google Inc. nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
 
 ---
 
@@ -1334,89 +651,6 @@ Redistribution and use in source and binary forms, with or without
  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(pmezard-go-difflib 1.0.0)
-
-Source: https://github.com/pmezard/go-difflib
-
-Files: *
-Copyright: 2013 Patrick Mézard
-License: BSD-3-clause
-
-Files: debian/*
-Copyright: 2016 Dmitry Smirnov <onlyjob@debian.org>
-License: BSD-3-clause
-
-License: BSD-3-clause
-
-Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are
- met:
- .
-    Redistributions of source code must retain the above copyright
-    notice, this list of conditions and the following disclaimer.
- .
-    Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in the
-    documentation and/or other materials provided with the distribution.
- .
-    The names of its contributors may not be used to endorse or promote
-    products derived from this software without specific prior written
-    permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
- IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
- PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
- TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
-
----
-
-BSD 3-clause "New" or "Revised" License
-(client9/misspell v0.3.4)
-
-which are covered under a BSD License.
-
-* https://golang.org/pkg/strings/#Replacer
-* https://golang.org/src/strings/replace.go
-* https://github.com/golang/go/blob/master/LICENSE
-
-Copyright (c) 2009 The Go Authors. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-   * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-   * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
 
 ---
 
@@ -2142,35 +1376,6 @@ intellectual property laws of the United States of America. No party to this
 Agreement will bring a legal action under this Agreement more than one year after
 the cause of action arose. Each party waives its rights to a jury trial in any
 resulting litigation.
-
----
-
-Expat License
-(golang-github-ghodss-yaml-dev 1.0.0)
-
-Expat License
-=============
-
-Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
-                               and Clark Cooper
-Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Expat maintainers.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in the
-Software without restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
-Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
-AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
@@ -3029,603 +2234,8 @@ That's all there is to it!
 
 ---
 
-ISC License
-(go-spew 1.1.0, go-spew v1.1.1)
-
-ISC License
-
-Copyright (c) 2012-2016 Dave Collins <dave@davec.name>
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted, provided that the above
-copyright notice and this permission notice appear in all copies.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
-WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
-MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
-ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
-WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
-ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
-OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE
-
----
-
 MIT License
-(github.com/konsorten/go-windows-terminal-sequences v1.0.1)
-
-(The MIT License)
-
-Copyright (c) 2017 marvin + konsorten GmbH (open-source@konsorten.de)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(yaml for Go v2.2.2)
-
-Copyright (c) 2006 Kirill Simonov
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(pty v1.1.1)
-
-Copyright (c) 2011 Keith Rarick
-
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated
-documentation files (the "Software"), to deal in the
-Software without restriction, including without limitation
-the rights to use, copy, modify, merge, publish, distribute,
-sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall
-be included in all copies or substantial portions of the
-Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
-KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
-OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(beorn7-perks v1.0.0)
-
-Copyright (C) 2013 Blake Mizerany
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(errcheck v1.1.0)
-
-Copyright (c) 2013 Kamil Kisiel
-
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(kisielk-gotool v1.0.0)
-
-Copyright (c) 2013 Kamil Kisiel <kamil@kamilkisiel.net>
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(alecthomas-kingpin v2.2.6)
-
-Copyright (C) 2014 Alec Thomas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(dominikh/go-tools 2019.2.3)
-
-Copyright (c) 2016 Dominik Honnef
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(go.uber.org/multierr v1.1.0)
-
-Copyright (c) 2017 Uber Technologies, Inc.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
-MIT License
-(mattn-go-isatty v0.0.3)
-
-Copyright (c) Yasuhiro MATSUMOTO <mattn.jp@gmail.com>
-
-MIT License (Expat)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(GoDoc Text v0.1.0)
-
-Copyright 2012 Keith Rarick
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
-MIT License
-(go-logfmt-logfmt v0.3.0)
-
-Files: debian/*
-Copyright: 2017 Martín Ferrari <tincho@debian.org>
-License: Expat
-Comment: Debian packaging is licensed under the same terms as upstream
-
-License: Expat
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
- .
- The above copyright notice and this permission notice shall be included in all
- copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- SOFTWARE
-
----
-
-MIT License
-(kr/pretty 0.1.0)
-
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: github.com/kr/pretty
-Source: https://github.com/kr/pretty/
-
-Files: *
-Copyright: 2011–2016 Keith Rarick <kr@xph.us>
-License: Expat
-
-Files: debian/*
-Copyright: 2013 Tonnerre Lombard <tonnerre@ancient-solutions.com>
-License: Expat
-
-License: Expat
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
- .
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- THE SOFTWARE
-
----
-
-MIT License
-(Go Testify v1.3.0)
-
-MIT License
-
-Copyright (c) 2012-2018 Mat Ryer and Tyler Bunnell
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(jsoniter-go v1.1.6)
-
-MIT License
-
-Copyright (c) 2016 json-iterator
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(Go Testify v1.2.2)
-
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without restriction,
-including without limitation the rights to use, copy, modify, merge,
-publish, distribute, sublicense, and/or sell copies of the Software,
-and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included
-in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
-OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
-OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(cespare/xxhash v1.1.0)
-
-Source: https://github.com/cespare/xxhash
-
-Files: *
-Copyright: 2016 Caleb Spare <cespare@gmail.com>
-License: Expat
-
-Files: debian/*
-Copyright: 2017 Alexandre Viau <aviau@debian.org>
-License: Expat
-Comment: Debian packaging is licensed under the same terms as upstream
-
-License: Expat
-
-Permission is hereby granted, free of charge, to any person obtaining
- a copy of this software and associated documentation files (the
- "Software"), to deal in the Software without restriction, including
- without limitation the rights to use, copy, modify, merge, publish,
- distribute, sublicense, and/or sell copies of the Software, and to
- permit persons to whom the Software is furnished to do so, subject to
- the following conditions:
- .
- The above copyright notice and this permission notice shall be
- included in all copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
- LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
- OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
- WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(mattn-go-colorable v0.0.9)
-
-Source: https://github.com/mattn/go-colorable
-
-Files: *
-Copyright: (c) 2016, Yasuhiro Matsumoto <mattn.jp@gmail.com>
-License: Expat
-
-Files: debian/*
-Copyright: 2016 Nobuhiro Iwamatsu <iwamatsu@debian.org>
-License: Expat
-
-License: Expat
-
-Permission is hereby granted, free of charge, to any person obtaining
- a copy of this software and associated documentation files (the
- "Software"), to deal in the Software without restriction, including
- without limitation the rights to use, copy, modify, merge, publish,
- distribute, sublicense, and/or sell copies of the Software, and to
- permit persons to whom the Software is furnished to do so, subject to
- the following conditions:
- .
- The above copyright notice and this permission notice shall be included
- in all copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
- CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
- TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(mapstructure v1.1.2)
-
-Source: https://github.com/mitchellh/mapstructure
-
-Files: *
-Copyright: 2013–2018 Mitchell Hashimoto <mitchell.hashimoto@gmail.com>
-License: Expat
-
-Files: debian/*
-Copyright: 2014–2018 Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
-License: Expat
-Comment: Debian packaging is licensed under the same terms as upstream
-
-License: Expat
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
- .
- The above copyright notice and this permission notice shall be included in all
- copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- SOFTWARE
-
----
-
-MIT License
-(stretchr/objx v0.1.0, stretchr/objx v0.1.1)
-
-The MIT License
-
-Copyright (c) 2014 Stretchr, Inc.
-Copyright (c) 2017-2018 objx contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(posener/complete v1.1.1)
-
-The MIT License
-
-Copyright (c) 2017 Eyal Posener
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
-MIT License
-(Animal Sniffer Annotations 1.18, Bouncy Castle 1.63, Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs 1.63, Checker Qual 2.0.0, Checker Qual 2.10.0, Checker Qual 2.5.5, fastparse 2.1.3, fastparse v2.1.1, go-viper 20200517-snapshot, go-viper v1.7.0, goconvey v1.6.4, Java JWT 3.10.3, jwks-rsa 0.8.2, jwks-rsa 0.8.3, scopt 3.7.1, SendGrid 4.5.0, SLF4J API Module 1.7.25, SLF4J API Module 1.7.26, SLF4J API Module 1.7.29, sourcecode 0.1.6, sourcecode 0.1.7, spf13-cast 20200408-snapshot, subosito/gotenv 20200215-snapshot)
+(Animal Sniffer Annotations 1.18, Bouncy Castle 1.63, Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs 1.63, Checker Qual 2.0.0, Checker Qual 2.10.0, Checker Qual 2.5.5, fastparse 2.1.3, fastparse v2.1.1, Java JWT 3.10.3, jwks-rsa 0.8.2, jwks-rsa 0.8.3, scopt 3.7.1, SendGrid 4.5.0, SLF4J API Module 1.7.25, SLF4J API Module 1.7.26, SLF4J API Module 1.7.29, sourcecode 0.1.6, sourcecode 0.1.7)
 
 The MIT License
 ===============
@@ -3651,410 +2261,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
-MIT License
-(go-toml 20181212-snapshot, go-toml v1.2.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2013 - 2017 Thomas Pelletier, Eric Anderton
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(subosito/gotenv v1.2.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2013 Alif Rachmawadi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
-MIT License
-(coreos/bbolt v1.3.2, go.etcd.io/bbolt v1.3.2)
-
-The MIT License (MIT)
-
-Copyright (c) 2013 Ben Johnson
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(fatih-color v1.7.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2013 Fatih Arslan
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(mapstructure 20190613-snapshot, mitchellh-go-homedir v1.0.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2013 Mitchell Hashimoto
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
-MIT License
-(BurntSushi/toml v0.3.1)
-
-The MIT License (MIT)
-
-Copyright (c) 2013 TOML authors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
-MIT License
-(hashicorp-go-syslog v1.0.0, hashicorp-mdns v1.0.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Armon Dadgar
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
----
-
-MIT License
-(go-stack-stack v1.8.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Chris Hines
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(Go Logrus v1.2.0, go-kit-kit v0.8.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Simon Eskildsen
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
-MIT License
-(github.com/spf13/jwalterweatherman 20190324-snapshot, github.com/spf13/jwalterweatherman v1.0.0, spf13-cast v1.3.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Steve Francia
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(go-logfmt-logfmt v0.4.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2015 go-logfmt
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(mitchellh-iochan v1.0.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2015 Mitchell Hashimoto
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
-MIT License
-(client9/misspell v0.3.4)
-
-The MIT License (MIT)
-
-Copyright (c) 2015-2017 Nick Galbreath
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(go-resty/resty v1.12.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2015-2019 Jeevanandam M., https://myjeeva.com <jeeva@myjeeva.com>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
----
-
-MIT License
-(mitchellh/go-testing-interface v1.0.0)
-
-The MIT License (MIT)
-
-Copyright (c) 2016 Mitchell Hashimoto
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE
-
----
-
 Mozilla Public License 2.0
-(Consul 1.1.0, errwrap v1.0.0, Go CLI v1.0.0, go-immutable-radix v1.0.0, golang-github-hashicorp-memberlist v0.1.3, H2 Database Engine version-1.4.200, hashicorp serf v0.8.2, hashicorp-go-cleanhttp v0.5.1, hashicorp-go-multierror v1.0.0, hashicorp-go-rootcerts v1.0.0, hashicorp-go-uuid v1.0.0, hashicorp-go-uuid v1.0.1, hashicorp-golang-lru v0.5.0, hashicorp-golang-lru v0.5.1, hashicorp-logutils v1.0.0, hashicorp/go-sockaddr v1.0.0, hashicorp/hcl 20200113-snapshot, hashicorp/hcl v1.0.0, mitchellh/gox v0.4.0)
+(H2 Database Engine version-1.4.200)
 
 Mozilla Public License
 Version 2.0
@@ -4088,12 +2296,12 @@ Version 2.0
 
   means
 
-    a.
+    a. 
 
       that the initial Contributor has attached the notice described in Exhibit B
       to the Covered Software; or
 
-    b.
+    b. 
 
       that the Covered Software was made available under the terms of version 1.1
       or earlier of the License, but not also under the terms of a Secondary
@@ -4122,12 +2330,12 @@ Version 2.0
 
   means any of the following:
 
-    a.
+    a. 
 
       any file in Source Code Form that results from an addition to, deletion
       from, or modification of the contents of Covered Software; or
 
-    b.
+    b. 
 
       any new file in Source Code Form that contains any Covered Software.
 
@@ -4169,7 +2377,7 @@ Version 2.0
   Each Contributor hereby grants You a world-wide, royalty-free, non-exclusive
   license:
 
-    a.
+    a. 
 
       under intellectual property rights (other than patent or trademark)
       Licensable by such Contributor to use, reproduce, make available, modify,
@@ -4177,7 +2385,7 @@ Version 2.0
       either on an unmodified basis, with Modifications, or as part of a Larger
       Work; and
 
-    b.
+    b. 
 
       under Patent Claims of such Contributor to make, use, sell, offer for sale,
       have made, import, and otherwise transfer either its Contributions or its
@@ -4198,18 +2406,18 @@ Version 2.0
   or licensing of Covered Software under this License. Notwithstanding
   Section 2.1(b) above, no patent license is granted by a Contributor:
 
-    a.
+    a. 
 
       for any code that a Contributor has removed from Covered Software; or
 
-    b.
+    b. 
 
       for infringements caused by: (i) Your and any other third party's
       modifications of Covered Software, or (ii) the combination of its
       Contributions with other software (except as part of its Contributor
       Version); or
 
-    c.
+    c. 
 
       under Patent Claims infringed by Covered Software in the absence of its
       Contributions.
@@ -4264,7 +2472,7 @@ Version 2.0
 
   If You distribute Covered Software in Executable Form then:
 
-    a.
+    a. 
 
       such Covered Software must also be made available in Source Code Form, as
       described in Section 3.1, and You must inform recipients of the Executable
@@ -4272,7 +2480,7 @@ Version 2.0
       means in a timely manner, at a charge no more than the cost of distribution
       to the recipient; and
 
-    b.
+    b. 
 
       You may distribute such Executable Form under the terms of this License, or
       sublicense it under different terms, provided that the license for the
