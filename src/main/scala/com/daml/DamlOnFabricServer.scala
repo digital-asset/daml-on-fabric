@@ -89,8 +89,8 @@ object DamlOnFabricServer extends App {
           _ <- {
             metricsRegistry.registerAll(new JvmMetricSet)
             val lfValueTranslationCache = LfValueTranslation.Cache.newInstrumentedInstance(
-              eventConfiguration = config.lfValueTranslationEventCache,
-              contractConfiguration = config.lfValueTranslationContractCache,
+              eventConfiguration = config.lfValueTranslationEventCacheConfiguration,
+              contractConfiguration = config.lfValueTranslationContractCacheConfiguration,
               metrics = metrics
             )
             for {
