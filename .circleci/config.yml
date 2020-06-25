@@ -73,7 +73,7 @@ commands:
             --logging.level.com.synopsys.integration=DEBUG \
             --detect.notices.report=true \
             --detect.excluded.detector.types=GO_MOD \
-            --detect.report.timeout=480
+            --detect.report.timeout=1100
 #            --detect.docker.image=digitalasset/daml-on-fabric:2.0.0 \
 #            --detect.docker.image=digitalasset/daml-on-fabric-chaincode:2.0.0 \
       - run:
@@ -119,7 +119,7 @@ workflows:
   blackduck:
     triggers:
       - schedule:
-          cron: "0 0 * * *"
+          cron: "3 0 * * *"
           filters:
              branches:
                 only:
