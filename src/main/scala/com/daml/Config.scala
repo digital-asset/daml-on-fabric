@@ -17,26 +17,26 @@ import com.daml.ledger.api.auth.{AuthService, AuthServiceWildcard}
 import com.daml.platform.configuration.IndexConfiguration
 
 final case class Config(
-                         port: Port,
-                         portFile: Option[File],
-                         archiveFiles: List[Path],
-                         maxInboundMessageSize: Int,
-                         eventsPageSize: Int,
-                         stateValueCache: caching.WeightedCache.Configuration,
-                         lfValueTranslationEventCacheConfiguration: caching.SizedCache.Configuration,
-                         lfValueTranslationContractCacheConfiguration: caching.SizedCache.Configuration,
-                         timeProvider: TimeProvider,
-                         address: Option[String],
-                         jdbcUrl: String,
-                         tlsConfig: Option[TlsConfiguration],
-                         participantId: v1.ParticipantId,
-                         startupMode: IndexerStartupMode,
-                         roleLedger: Boolean,
-                         roleTime: Boolean,
-                         roleProvision: Boolean,
-                         roleExplorer: Boolean,
-                         authService: AuthService,
-                         seeding: Seeding
+    port: Port,
+    portFile: Option[File],
+    archiveFiles: List[Path],
+    maxInboundMessageSize: Int,
+    eventsPageSize: Int,
+    stateValueCache: caching.WeightedCache.Configuration,
+    lfValueTranslationEventCacheConfiguration: caching.SizedCache.Configuration,
+    lfValueTranslationContractCacheConfiguration: caching.SizedCache.Configuration,
+    timeProvider: TimeProvider,
+    address: Option[String],
+    jdbcUrl: String,
+    tlsConfig: Option[TlsConfiguration],
+    participantId: v1.ParticipantId,
+    startupMode: IndexerStartupMode,
+    roleLedger: Boolean,
+    roleTime: Boolean,
+    roleProvision: Boolean,
+    roleExplorer: Boolean,
+    authService: AuthService,
+    seeding: Seeding
 ) {
   def withTlsConfig(modify: TlsConfiguration => TlsConfiguration): Config =
     copy(tlsConfig = Some(modify(tlsConfig.getOrElse(TlsConfiguration.Empty))))
