@@ -69,19 +69,21 @@ commands:
           name: Run Blackduck Detect
           command: |
             bash <(curl -s https://raw.githubusercontent.com/DACH-NY/security-blackduck/master/synopsys-detect) \
-            ci-build digitalasset_daml-on-fabric master \
+            ci-build ${CIRCLE_PROJECT_USERNAME}_${CIRCLE_PROJECT_REPONAME} ${CIRCLE_BRANCH} \
             --logging.level.com.synopsys.integration=DEBUG \
             --detect.notices.report=true \
+            --detect.policy.check.fail.on.severities=MAJOR,CRITICAL,BLOCKER \
             --detect.excluded.detector.types=GO_MOD \
             --detect.report.timeout=1100
 #            --detect.docker.image=digitalasset/daml-on-fabric:2.0.0 \
 #            --detect.docker.image=digitalasset/daml-on-fabric-chaincode:2.0.0 \
       - run:
-          command: cp digitalasset_daml_on_fabric_master_Black_Duck_Notices_Report.txt NOTICES
-      - persist_to_workspace:
-          root: .
-          paths:
-            - "NOTICES"
+          command: |
+          NOTICES_FILENAME="$(echo "${CIRCLE_PROJECT_USERNAME}_${CIRCLE_PROJECT_REPONAME}_${CIRCLE_BRANCH}" | sed -r 's/-/_/g' | awk '{print tolower($0)}')_Black_Duck_Notices_Report.txt"
+          cp $NOTICES_FILENAME NOTICES
+      - store_artifacts:
+          name: Store the NOTICES.txt file
+          path: NOTICES.txt
 
 jobs:
   build:
