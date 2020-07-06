@@ -1,4 +1,4 @@
-.PHONY: compile format-check test package it
+.PHONY: compile cleanCompile format-check format-all test package it
 
 compile:
 	sbt compile
