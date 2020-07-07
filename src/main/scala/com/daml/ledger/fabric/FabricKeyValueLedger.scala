@@ -12,6 +12,7 @@ import com.daml.ledger.participant.state.kvutils.api.KeyValueParticipantState
 import com.daml.ledger.participant.state.kvutils.app.ReadWriteService
 import com.daml.ledger.participant.state.v1.{LedgerId, ParticipantId}
 import com.daml.lf.data.Ref
+import com.daml.lf.engine.Engine
 import com.daml.metrics.Metrics
 import com.daml.platform.akkastreams.dispatcher.Dispatcher
 import com.daml.resources.{Resource, ResourceOwner}
@@ -26,7 +27,8 @@ object FabricKeyValueLedger {
       participantId: ParticipantId,
       timeProvider: TimeProvider = DefaultTimeProvider,
       dispatcher: Dispatcher[Index],
-      metrics: Metrics
+      metrics: Metrics,
+      engine: Engine
   )(implicit materializer: Materializer)
       extends ResourceOwner[ReadWriteService] {
     override def acquire()(
@@ -36,7 +38,14 @@ object FabricKeyValueLedger {
       val ledgerId =
         initialLedgerId.getOrElse(Ref.LedgerString.assertFromString(UUID.randomUUID.toString))
       val reader =
-        new FabricLedgerReaderWriter(participantId, ledgerId, timeProvider, metrics, dispatcher)
+        new FabricLedgerReaderWriter(
+          participantId,
+          ledgerId,
+          timeProvider,
+          metrics,
+          dispatcher,
+          engine
+        )
 
       Resource.successful(
         new KeyValueParticipantState(reader, reader, metrics)
