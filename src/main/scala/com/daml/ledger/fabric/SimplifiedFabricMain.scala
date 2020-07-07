@@ -25,14 +25,13 @@ object SimplifiedFabricMain {
 
     val resourceOwner = for {
       dispatcher <- FabricLedgerReaderWriter.newDispatcher()
-      engine = new Engine()
-      factory = new FabricLedgerFactory(dispatcher, engine)
+      factory = new FabricLedgerFactory(dispatcher)
       runner <- new Runner("daml-on-fabric", factory).owner(args)
     } yield runner
     new ProgramResource(resourceOwner).run()
   }
 
-  final class FabricLedgerFactory(dispatcher: Dispatcher[Index], engine: Engine)
+  final class FabricLedgerFactory(dispatcher: Dispatcher[Index])
       extends LedgerFactory[ReadWriteService, ExtraConfig] {
     override def readWriteServiceOwner(
         config: Config[ExtraConfig],
@@ -63,7 +62,8 @@ object SimplifiedFabricMain {
             config.ledgerId,
             participantConfig.participantId,
             dispatcher = dispatcher,
-            metrics = metrics
+            metrics = metrics,
+            engine = engine
           )
         } yield ledger
 

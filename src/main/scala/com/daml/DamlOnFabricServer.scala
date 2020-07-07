@@ -76,7 +76,7 @@ object DamlOnFabricServer extends App {
       implicit val materializer: Materializer = Materializer(actorSystem)
 
       // DAML Engine for transaction validation.
-      val sharedEngine = Engine()
+      val sharedEngine = new Engine(Engine.StableConfig)
 
       newLoggingContext { implicit logCtx =>
         for {

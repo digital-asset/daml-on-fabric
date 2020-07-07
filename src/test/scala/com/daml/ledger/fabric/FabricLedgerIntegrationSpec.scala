@@ -10,6 +10,7 @@ import akka.stream.scaladsl.Source
 import com.daml.ledger.participant.state.kvutils.ParticipantStateIntegrationSpecBase
 import com.daml.ledger.participant.state.kvutils.ParticipantStateIntegrationSpecBase.ParticipantState
 import com.daml.ledger.participant.state.v1._
+import com.daml.lf.engine.Engine
 import com.daml.logging.LoggingContext
 import com.daml.metrics.Metrics
 import com.daml.resources.ResourceOwner
@@ -20,6 +21,8 @@ abstract class FabricLedgerIntegrationSpecBase
     ) {
 
   override val isPersistent: Boolean = false
+
+  val sharedEngine = new Engine(Engine.DevConfig)
 
   override def participantStateFactory(
       ledgerId: Option[LedgerId],
@@ -34,7 +37,8 @@ abstract class FabricLedgerIntegrationSpecBase
         initialLedgerId = ledgerId,
         participantId = participantId,
         dispatcher = dispatcher,
-        metrics = metrics
+        metrics = metrics,
+        engine = sharedEngine
       )
     } yield participantState
   }

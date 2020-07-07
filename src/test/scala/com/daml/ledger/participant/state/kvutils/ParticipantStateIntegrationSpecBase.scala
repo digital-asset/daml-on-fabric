@@ -323,7 +323,12 @@ abstract class ParticipantStateIntegrationSpecBase(implementationName: String)(
           _ <- ps.allocateParty(hint = Some(alice), None, newSubmissionId()).toScala
           (offset1, _) <- waitForNextUpdate(ps, None)
           _ <- ps
-            .submitTransaction(submitterInfo(rt, alice), transactionMeta(rt), emptyTransaction)
+            .submitTransaction(
+              submitterInfo(rt, alice),
+              transactionMeta(rt),
+              emptyTransaction,
+              dummyEstimatedTransactionCost
+            )
             .toScala
           (offset2, _) <- waitForNextUpdate(ps, Some(offset1))
         } yield {
@@ -342,7 +347,8 @@ abstract class ParticipantStateIntegrationSpecBase(implementationName: String)(
             .submitTransaction(
               submitterInfo(rt, alice, commandIds._1),
               transactionMeta(rt),
-              emptyTransaction
+              emptyTransaction,
+              dummyEstimatedTransactionCost
             )
             .toScala
           (offset2, update2) <- waitForNextUpdate(ps, Some(offset1))
@@ -351,7 +357,8 @@ abstract class ParticipantStateIntegrationSpecBase(implementationName: String)(
             .submitTransaction(
               submitterInfo(rt, alice, commandIds._1),
               transactionMeta(rt),
-              emptyTransaction
+              emptyTransaction,
+              dummyEstimatedTransactionCost
             )
             .toScala
           // ^ duplicate, gets dropped.
@@ -360,7 +367,8 @@ abstract class ParticipantStateIntegrationSpecBase(implementationName: String)(
             .submitTransaction(
               submitterInfo(rt, alice, commandIds._2),
               transactionMeta(rt),
-              emptyTransaction
+              emptyTransaction,
+              dummyEstimatedTransactionCost
             )
             .toScala
           (offset3, update3) <- waitForNextUpdate(ps, Some(offset2))
@@ -392,7 +400,8 @@ abstract class ParticipantStateIntegrationSpecBase(implementationName: String)(
             .submitTransaction(
               submitterInfo(rt, alice, "X1"),
               transactionMeta(rt),
-              emptyTransaction
+              emptyTransaction,
+              dummyEstimatedTransactionCost
             )
             .toScala
           (offset2, _) <- waitForNextUpdate(ps, Some(offset1))
@@ -400,7 +409,8 @@ abstract class ParticipantStateIntegrationSpecBase(implementationName: String)(
             .submitTransaction(
               submitterInfo(rt, alice, "X2"),
               transactionMeta(rt),
-              emptyTransaction
+              emptyTransaction,
+              dummyEstimatedTransactionCost
             )
             .toScala
           (offset3, update3) <- waitForNextUpdate(ps, Some(offset2))
@@ -433,7 +443,8 @@ abstract class ParticipantStateIntegrationSpecBase(implementationName: String)(
             .submitTransaction(
               submitterInfo(rt, unallocatedParty),
               transactionMeta(rt),
-              emptyTransaction
+              emptyTransaction,
+              dummyEstimatedTransactionCost
             )
             .toScala
           (offset2, update2) <- waitForNextUpdate(ps, Some(offset1))
@@ -459,7 +470,8 @@ abstract class ParticipantStateIntegrationSpecBase(implementationName: String)(
             .submitTransaction(
               submitterInfo(rt, party = newParty),
               transactionMeta(rt),
-              emptyTransaction
+              emptyTransaction,
+              dummyEstimatedTransactionCost
             )
             .toScala
           (offset4, update4) <- waitForNextUpdate(ps, Some(offset3))
@@ -701,6 +713,8 @@ object ParticipantStateIntegrationSpecBase {
 
   private val emptyTransaction: SubmittedTransaction =
     Tx.SubmittedTransaction(TransactionBuilder.Empty)
+
+  private val dummyEstimatedTransactionCost = 0L
 
   private val participantId: ParticipantId = Ref.ParticipantId.assertFromString("test-participant")
   private val sourceDescription = Some("provided by test")
