@@ -213,7 +213,7 @@ services:
       environment:
         - LEDGER_PORT=12222
         - LEDGER_ROLES=ledger
-        - LEDGER_ARGS=SemanticTests.dar Test-stable.dar Test-dev.dar
+        - LEDGER_ARGS=semantic-tests.dar model-tests.dar performance-tests.dar
         - LEDGER_DELAY=80s
         - LEDGER_AUTH=$LEDGER_AUTH
       ports:
