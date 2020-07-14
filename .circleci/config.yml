@@ -116,13 +116,13 @@ workflows:
       - build
 
   blackduck:
-    triggers:
-      - schedule:
-          cron: "30 8 * * 1-5"
-          filters:
-             branches:
-                only:
-                  - master
+#     triggers:
+#       - schedule:
+#           cron: "30 8 * * 1-5"
+#           filters:
+#              branches:
+#                 only:
+#                   - master
     jobs:
       - blackduck-build:
           context: blackduck
