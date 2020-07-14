@@ -78,13 +78,9 @@ commands:
 #            --detect.policy.check.fail.on.severities=MAJOR,CRITICAL,BLOCKER \
 #            --detect.docker.image=digitalasset/daml-on-fabric:2.0.0 \
 #            --detect.docker.image=digitalasset/daml-on-fabric-chaincode:2.0.0 \
-      - run:
-          command: |
-            NOTICES_FILENAME="$(echo "${CIRCLE_PROJECT_USERNAME}_${CIRCLE_PROJECT_REPONAME}_${CIRCLE_BRANCH}" | sed -r 's/-/_/g' | awk '{print tolower($0)}')_Black_Duck_Notices_Report.txt"
-            cp $NOTICES_FILENAME NOTICES
       - store_artifacts:
-          name: Store the NOTICES.txt file
-          path: NOTICES.txt
+          name: Store the Blackduck run artifacts
+          path: /home/circleci/blackduck/runs
 
 jobs:
   build:
