@@ -71,6 +71,7 @@ commands:
             bash <(curl -s https://raw.githubusercontent.com/DACH-NY/security-blackduck/master/synopsys-detect) \
             ci-build ${CIRCLE_PROJECT_USERNAME}_${CIRCLE_PROJECT_REPONAME} ${CIRCLE_BRANCH} \
             --logging.level.com.synopsys.integration=DEBUG \
+            --detect.tools=DETECTOR,BINARY_SCAN \
             --detect.notices.report=false \
             --detect.excluded.detector.types=GO_MOD \
             --detect.cleanup=false \
