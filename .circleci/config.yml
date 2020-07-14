@@ -71,7 +71,7 @@ commands:
             bash <(curl -s https://raw.githubusercontent.com/DACH-NY/security-blackduck/master/synopsys-detect) \
             ci-build ${CIRCLE_PROJECT_USERNAME}_${CIRCLE_PROJECT_REPONAME} ${CIRCLE_BRANCH} \
             --logging.level.com.synopsys.integration=DEBUG \
-            --detect.notices.report=true \
+            --detect.notices.report=false \
             --detect.excluded.detector.types=GO_MOD \
             --detect.report.timeout=1100
 # TODO cannot enable until upgraded to DAML 1.3.0
