@@ -8,7 +8,7 @@ ThisBuild / organizationName := "Digital Asset. LLC"
 //TODO BH: run old fabric main until simplified api is fully wired
 ThisBuild / mainClass := Some("com.daml.DamlOnFabricServer")
 
-lazy val sdkVersion = "1.3.0-snapshot.20200708.4686.0.95dfa18e"
+lazy val sdkVersion = "1.3.0-snapshot.20200714.4687.0.8e10c7a7"
 lazy val akkaVersion = "2.6.1"
 lazy val logbackVersion = "1.2.3"
 lazy val jacksonDataFormatYamlVersion = "2.11.0"
