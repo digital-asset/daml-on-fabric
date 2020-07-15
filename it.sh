@@ -80,11 +80,8 @@ echo "Launching the test tool..."
 
 export TEST_COMMAND="/usr/local/openjdk-8/bin/java -jar ledger-api-test-tool.jar \
 localhost:12222 \
---all-tests \
---exclude=LotsOfPartiesIT,LedgerConfigurationServiceIT \
 --timeout-scale-factor=6 \
 --concurrent-test-runs=2 \
---load-scale-factor=0.10 \
 --verbose"
 docker exec -it damlonfabric_ci_daml-on-fabric-2_1 ${TEST_COMMAND}
 
