@@ -8,7 +8,6 @@
 4. Running a JSON endpoint that automatically creates every endpoint we need for our DAML application
 5. Starting up a React UI that will consume these JSON endpoints with no lower level interaction with DAML or Fabric necessary
 
-
 ### Building Our DAML App
 
 1. Let's `daml create-daml-app my-app` to create our example application in the `my-app` directory.
@@ -25,7 +24,7 @@ Now that we have our DAML app built it needs a place to run, let's grab `daml-on
 4. From the root `daml-on-fabric` directory run `sbt "run --port 6865 --role provision,time,ledger" -J-DfabricConfigFile=config-local.yaml` which will let the DAML runtime start talking to our Fabric instance.
 
 	Give this process a moment to start up, it is ready once you see output like:
-
+	
     ```
     13:57:06.404 INFO  c.d.p.a.ApiServices - DAML LF Engine supports LF versions: 0, 0.dev, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.dev; Transaction versions: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10; Value versions: 1, 2, 3, 4, 5, 6, 7
     13:57:11.307 INFO  c.d.p.a.s.LedgerConfigProvider - No ledger configuration found, submitting an initial configuration 4f751996-52ab-44fb-b218-effb74b88fe6
