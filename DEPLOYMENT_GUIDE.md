@@ -12,7 +12,7 @@
 ### Building Our DAML App
 
 1. Let's `daml create-daml-app my-app` to create our example application in the `my-app` directory.
-2. Now follow the [build instructions](https://github.com/digital-asset/daml/blob/master/templates/create-daml-app/README.md) in `README.md`. Build the project up to and including the `yarn build` command, then come back here
+2. Now follow the build instructions in `my-app/README.md`. Build the project up to and including the `yarn build` command, then come back here
 
 ### Starting up Fabric
 
