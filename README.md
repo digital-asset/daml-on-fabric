@@ -15,7 +15,7 @@ Docker and Docker-Compose are required to run a Hyperledger Fabric network, and 
 - **docker-compose** version 1.24.0 or greater
 - **docker CE** version 18.09.6 or greater
 - **Java / JDK** version 1.8.0.x
-- **DAML SDK** version 1.2.0
+- **DAML SDK** version 1.3.0
 - **Hyperledger Fabric Tools** version 2.0.0 or greater
 
 You can get the latest Hyperledger Fabric Tools by running the following command, and binaries will be downloaded to  <download_directory>/bin
