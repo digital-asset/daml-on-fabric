@@ -18,3 +18,9 @@ docker rmi -f $(docker images -q "hyperledger/fabric-*")
 
 echo "Delete daml-on-fabric images"
 docker rmi -f $(docker images -q "digitalasset/daml-on-fabric*")
+
+echo "Delete chaincode images"
+docker rmi -f $(docker images -q "dev-peer*")
+
+echo "Delete base images used in build"
+grep -hr --include=\Dockerfile 'FROM ' ../../../ | cut -d' ' -f 2 | xargs docker rmi
