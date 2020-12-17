@@ -20,3 +20,5 @@ package: compile
 	sbt assembly
 
 it: package; ./it.sh
+
+docker-publish: package; ./build_and_publish_image.sh

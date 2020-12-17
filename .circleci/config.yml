@@ -63,6 +63,20 @@ commands:
             - "~/.m2"
           key: v1-dependencies--{{ checksum "build.sbt" }}
 
+  docker-build-and-publish:
+    steps:
+      - run:
+          name: Docker Build and Publish
+          command: |
+            ls
+            make docker-publish
+      - save_cache:
+          paths:
+            - "~/.ivy2/cache"
+            - "~/.sbt"
+            - "~/.m2"
+          key: v1-dependencies--{{ checksum "build.sbt" }}
+
   blackduck-scan:
     steps:
       - run:
@@ -76,11 +90,10 @@ commands:
             --detect.excluded.detector.types=GO_MOD \
             --detect.cleanup=false \
             --detect.cleanup.bdio.files=false \
-            --detect.report.timeout=1100
-# TODO cannot enable until upgraded to DAML 1.3.0
-#            --detect.policy.check.fail.on.severities=MAJOR,CRITICAL,BLOCKER \
-#            --detect.docker.image=digitalasset/daml-on-fabric:2.0.0 \
-#            --detect.docker.image=digitalasset/daml-on-fabric-chaincode:2.0.0 \
+            --detect.report.timeout=1100 \
+            --detect.policy.check.fail.on.severities=MAJOR,CRITICAL,BLOCKER \
+            --detect.docker.image=digitalasset/daml-on-fabric-chaincode:2.0.0
+      #            --detect.docker.image=digitalasset/daml-on-fabric:2.0.0 \
       - store_artifacts:
           name: Store the Blackduck run artifacts
           path: /home/circleci/blackduck/runs
@@ -99,6 +112,7 @@ jobs:
       - setup-build
       - run-build
       - run-integration-test
+      - docker-build-and-publish
             
   blackduck-build:
     working_directory: ~/builddir
@@ -116,7 +130,8 @@ workflows:
   version: 2
   workflow:
     jobs:
-      - build
+      - build:
+         context: docker-publish
 
   blackduck:
     triggers:
