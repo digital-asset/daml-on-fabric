@@ -13,7 +13,7 @@ lazy val akkaVersion = "2.6.10"
 lazy val logbackVersion = "1.2.3"
 lazy val jacksonDataFormatYamlVersion = "2.12.0"
 lazy val protobufVersion = "3.7.1"
-lazy val fabricSdkVersion = "2.1.0"
+lazy val fabricSdkVersion = "2.2.0"
 
 // This task is used by the integration test to detect which version of Ledger API Test Tool to use.
 val printSdkVersion = taskKey[Unit]("printSdkVersion")
