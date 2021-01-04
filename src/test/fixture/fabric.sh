@@ -19,9 +19,9 @@ if [[ "${DOCKER_NETWORK}" == "" ]]; then
   DOCKER_NETWORK="damlonfabric"
 fi
 
-export ORG_HYPERLEDGER_FABRIC_SDKTEST_VERSION="2.0.0"
-export IMAGE_TAG_FABRIC_CA=":2.0"
-export IMAGE_TAG_FABRIC=":2.0"
+export ORG_HYPERLEDGER_FABRIC_SDKTEST_VERSION="2.2.0"
+export IMAGE_TAG_FABRIC_CA=":2.2"
+export IMAGE_TAG_FABRIC=":2.2"
 
 function clean(){
 
