@@ -195,7 +195,7 @@ services:
       command: /usr/local/bin/configtxlator start
 
   daml-on-fabric-1:
-      image: digitalasset/daml-on-fabric:2.0.0
+      image: digitalasset/daml-on-fabric:2.2.0
       environment:
         - LEDGER_PORT=11111
         - LEDGER_ROLES=provision,time,ledger
@@ -209,7 +209,7 @@ services:
         - peer0.org2.example.com
 
   daml-on-fabric-2:
-      image: digitalasset/daml-on-fabric:2.0.0
+      image: digitalasset/daml-on-fabric:2.2.0
       environment:
         - LEDGER_PORT=12222
         - LEDGER_ROLES=ledger

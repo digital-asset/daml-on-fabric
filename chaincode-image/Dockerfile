@@ -1,4 +1,4 @@
-#docker build . -t digitalasset/daml-on-fabric-chaincode:2.0.0
+#docker build . -t digitalasset/daml-on-fabric-chaincode:2.2.0
 
 FROM golang:1.13.5-alpine AS build_base
 

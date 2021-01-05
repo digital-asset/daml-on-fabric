@@ -18,4 +18,4 @@ cp ./get_jwks_token.sh tmp
 cp ./damlOnFabricStart.sh tmp
 cp ./Dockerfile tmp
 cd tmp
-docker build . -t digitalasset/daml-on-fabric:2.0.0 --build-arg SDK_VERSION=${SDK_VERSION}
+docker build . -t digitalasset/daml-on-fabric:2.2.0 --build-arg SDK_VERSION=${SDK_VERSION}
