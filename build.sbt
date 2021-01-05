@@ -25,13 +25,16 @@ assemblyMergeStrategy in assembly := {
   case "META-INF/io.netty.versions.properties" =>
     MergeStrategy.first
   // clashing bouncycastle metainfo
-  case "META-INF/versions/9/module-info.class" => MergeStrategy.first
+  case "META-INF/versions/9/module-info.class" => 
+    MergeStrategy.first
   // Both in protobuf and akka
   case PathList("google", "protobuf", n) if n.endsWith(".proto") =>
     MergeStrategy.first
   // In all 2.10 Jackson JARs
   case "module-info.class" =>
     MergeStrategy.discard
+  case "META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat" => 
+    MergeStrategy.rename
   case x =>
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)
