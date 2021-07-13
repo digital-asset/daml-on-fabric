@@ -110,10 +110,10 @@ jobs:
       - blackduck-scan
 
 workflows:
-  version: 2
   workflow:
     jobs:
       - build:
+          context: blackduck
       - blackduck-build:
           context: blackduck
           filters:
