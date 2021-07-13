@@ -113,7 +113,12 @@ workflows:
   version: 2
   workflow:
     jobs:
-      - build
+      - build:
+      - blackduck-build:
+          context: blackduck
+          filters:
+            branches:
+              only: /^blackduck.*/
 
   blackduck:
     triggers:
