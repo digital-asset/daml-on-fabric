@@ -1,6 +1,8 @@
 import Dependencies._
 
-ThisBuild / scalaVersion := "2.12.11"
+scalaVersion := "2.12.11"
+autoScalaLibrary := false
+
 ThisBuild / version := "2.2.0.1"
 ThisBuild / organization := "com.daml"
 ThisBuild / organizationName := "Digital Asset. LLC"
