@@ -10,10 +10,14 @@ ThisBuild / mainClass := Some("com.daml.DamlOnFabricServer")
 
 lazy val sdkVersion = "1.10.0"
 lazy val akkaVersion = "2.6.12"
-lazy val logbackVersion = "1.2.3"
+lazy val logbackVersion = "1.2.8"
 lazy val jacksonDataFormatYamlVersion = "2.12.0"
 lazy val protobufVersion = "3.14.0"
 lazy val fabricSdkVersion = "2.2.0"
+lazy val log4j_version = "2.16.0"
+
+lazy val log4jCore = "org.apache.logging.log4j" % "log4j-core" % log4j_version
+lazy val log4jApi = "org.apache.logging.log4j" % "log4j-api" % log4j_version
 
 // This task is used by the integration test to detect which version of Ledger API Test Tool to use.
 val printSdkVersion = taskKey[Unit]("printSdkVersion")
@@ -87,10 +91,14 @@ lazy val root = (project in file("."))
       "ch.qos.logback" % "logback-classic" % logbackVersion,
       // fabric
       ("org.hyperledger.fabric-sdk-java" % "fabric-sdk-java" % fabricSdkVersion)
-        .excludeAll(ExclusionRule(organization = "javax.xml.bind", name = "jaxb-api")),
+        .excludeAll(ExclusionRule(organization = "javax.xml.bind", name = "jaxb-api"), ExclusionRule("org.apache.logging.log4j")),
       "org.jodd" % "jodd-json" % "5.0.12",
-      "com.fasterxml.jackson.dataformat" % "jackson-dataformat-yaml" % jacksonDataFormatYamlVersion
+      "com.fasterxml.jackson.dataformat" % "jackson-dataformat-yaml" % jacksonDataFormatYamlVersion,
+      log4jCore,
+      log4jApi
     ),
+    dependencyOverrides += log4jApi,
+    dependencyOverrides += log4jCore,
     resolvers += Resolver.mavenLocal,
     useCoursier := false
   )
