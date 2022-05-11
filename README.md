@@ -5,6 +5,9 @@
 
 Ledger implementation enabling DAML applications to run on Hyperledger Fabric 2.x
 
+# Deprecation Notice
+As of March 2022, this driver is deprecated in favor of the [Canton-on-Fabric integration](https://docs.daml.com/canton/usermanual/domains/fabric.html). No further development will be done in this repository.
+
 # Quick Start Guide
 
 ## Prerequisites
